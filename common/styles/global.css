@@ -1,0 +1,76 @@
+@import url(./padding.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-primary: "Italiana", sans-serif;
+  --font-secondary: "Krub", sans-serif;
+  --font-tertiary: "Roboto", sans-serif;
+  --color-primary: #ef5025;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-secondary);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-inline: auto;
+  width: min(84%, 1000rem);
+}
+
+.normalBtn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 8px 20px;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  width: max-content;
+  max-width: 100%;
+  border-radius: 14px;
+  gap: 10px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  color: white;
+
+  span {
+    padding: 4px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &:hover {
+    background: black;
+    color: white;
+    border-color:black ;
+
+    span {
+      rotate: -25deg;
+      scale: 1.1;
+
+      svg {
+        color: black;
+      }
+    }
+  }
+}

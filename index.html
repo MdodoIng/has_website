@@ -1,20 +1,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./common/assets/images/logo white.png"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./common/styles/global.css" />
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            colors: {},
+            fontFamily: {
+              primary: "var(--font-primary)",
+              secondary: "var(--font-secondary)",
+              tertiary: "var(--font-tertiary)",
+            },
+            colors: {
+              primary: "var(--color-primary)",
+            },
           },
+          plugins: [],
         },
       };
     </script>
   </head>
-  <body class="text-5xl">
-    koi
+  <body class="flex flex-col w-full items-center justify-center">
+    <header></header>
+
+    <section
+      class="wrapper main_padding_y main_padding_x flex items-center justify-center h-screen w-full relative z-0 overflow-hidden text-white"
+    >
+      <div class="flex items-center w-full h-full justify-start">
+        <div class="flex flex-col pl-20">
+          <div
+            class="relative z-0 overflow-y-clip font-primary text-6xl tracking-[0%] w-full"
+          >
+            <h1 class="opacity-0 w-full">
+              0 Aluminium Solutions <br />
+              Craftedw-maxw-
+            </h1>
+
+            <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
+              Aluminium Solutions <br> Crafted for Excellence
+            </h1>
+            <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
+              Crystal Clear Quality in <br />
+              Every Glass “Solution”
+            </h1>
+          </div>
+          <div class="flex items-start text-lg gap-3 mt-16">
+            <img
+              src="./common/assets/icons/arrow .svg"
+              alt=""
+              width="18"
+              height="14"
+              class="bg-white p-1 rounded-full translate-y-1.5"
+            />
+            <p>
+              We will
+              <b
+                >produce and supplies <br />
+                Aluminium
+              </b>
+              For you
+            </p>
+          </div>
+          <a href="" class="normalBtn mt-6"
+            >Explore products
+
+            <span>
+              <svg
+                width="18"
+                height="15"
+                viewBox="0 0 18 15"
+                fill="none"
+                color="#EF5025"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <img
+        class="object-cover -z-10 absolute top-0 left-0 w-full h-full"
+        alt=""
+        src="./common/assets/images/home/slider.jpg"
+      />
+    </section>
+    <footer></footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+  <script
+    type="module"
+    crossorigin="anonymous"
+    src="./common/js/main.js"
+  ></script>
+  <script
+    type="module"
+    crossorigin="anonymous"
+    src="./common/js/home/index.js"
+  ></script>
 </html>
