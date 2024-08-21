@@ -16,12 +16,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-secondary);
+  box-sizing: border-box;
 }
 
 .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: start;
   margin-inline: auto;
   width: min(84%, 1000rem);
 }
@@ -62,7 +60,7 @@
   &:hover {
     background: black;
     color: white;
-    border-color:black ;
+    border-color: black;
 
     span {
       rotate: -25deg;

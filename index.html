@@ -31,76 +31,563 @@
   <body class="flex flex-col w-full items-center justify-center">
     <header></header>
 
-    <section
-      class="wrapper main_padding_y main_padding_x flex items-center justify-center h-screen w-full relative z-0 overflow-hidden text-white"
-    >
-      <div class="flex items-center w-full h-full justify-start">
-        <div class="flex flex-col pl-20">
-          <div
-            class="relative z-0 overflow-y-clip font-primary text-6xl tracking-[0%] w-full"
-          >
-            <h1 class="opacity-0 w-full">
-              0 Aluminium Solutions <br />
-              Craftedw-maxw-
-            </h1>
+    <section id="leadingHeroSection" class="w-full relative z-0">
+      <div
+        class="wrapper main_padding_y flex items-center justify-center h-screen relative z-0 overflow-hidden text-white"
+      >
+        <div class="flex items-center w-full h-full justify-start relative z-0">
+          <div class="flex flex-col pl-20">
+            <div
+              class="relative z-0 overflow-y-clip font-primary text-6xl tracking-[0%] w-full"
+            >
+              <div class="opacity-0 w-full headingHight"></div>
 
-            <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
-              Aluminium Solutions <br> Crafted for Excellence
-            </h1>
-            <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
-              Crystal Clear Quality in <br />
-              Every Glass “Solution”
-            </h1>
-          </div>
-          <div class="flex items-start text-lg gap-3 mt-16">
-            <img
-              src="./common/assets/icons/arrow .svg"
-              alt=""
-              width="18"
-              height="14"
-              class="bg-white p-1 rounded-full translate-y-1.5"
-            />
-            <p>
-              We will
-              <b
-                >produce and supplies <br />
-                Aluminium
-              </b>
-              For you
-            </p>
-          </div>
-          <a href="" class="normalBtn mt-6"
-            >Explore products
-
-            <span>
-              <svg
+              <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
+                Aluminium Solutions <br />
+                Crafted for Excellence
+              </h1>
+              <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
+                Crystal Clear Quality in <br />
+                Every Glass “Solution”
+              </h1>
+            </div>
+            <div class="flex items-start text-lg gap-3 mt-16">
+              <img
+                src="./common/assets/icons/arrow .svg"
+                alt=""
                 width="18"
-                height="15"
-                viewBox="0 0 18 15"
-                fill="none"
-                color="#EF5025"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
-                  fill="currentcolor"
-                />
-              </svg>
-            </span>
-          </a>
+                height="14"
+                class="bg-white p-1 rounded-full translate-y-1.5"
+              />
+              <p>
+                We will
+                <b
+                  >produce and supplies <br />
+                  Aluminium
+                </b>
+                For you
+              </p>
+            </div>
+            <a href="" class="normalBtn mt-6"
+              >Explore products
+
+              <span>
+                <svg
+                  width="18"
+                  height="15"
+                  viewBox="0 0 18 15"
+                  fill="none"
+                  color="#EF5025"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                    fill="currentcolor"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <!-- left index Slider -->
+          <div
+            style="grid-template-rows: repeat(3, minmax(0, 1fr))"
+            data-slider-pagination
+            class="absolute left-0 h-40 w-0.5 grid gap-1 [&_span]:bg-white [&_span]:h-full [&_span]:w-full"
+          ></div>
         </div>
       </div>
-
+      <!-- bg Images -->
       <img
+        data-sliderImage="1"
         class="object-cover -z-10 absolute top-0 left-0 w-full h-full"
         alt=""
         src="./common/assets/images/home/slider.jpg"
       />
+      <img
+        data-sliderImage="2"
+        class="object-cover -z-10 absolute top-0 left-0 w-full h-full"
+        alt=""
+        src="./common/assets/images/home/slider1.jpg"
+      />
     </section>
-    <footer></footer>
+
+    <section class="bg-[#F3F3F3] w-full">
+      <div class="wrapper main_padding_y grid grid-cols-2 items-center gap-10">
+        <div class="flex flex-col gap-10">
+          <h2 class="md:text-5xl text-4xl font-primary max-w-[20ch]">
+            Manufacturing dealing , Distributing Quality
+          </h2>
+          <menu class="pl-10 flex flex-col gap-5">
+            <li class="flex items-center text-xl font-medium gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-6"
+              />
+              <p>Design with you in collaboration</p>
+            </li>
+            <li class="flex items-center text-xl font-medium gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-6"
+              />
+              <p>Extrude the aluminium in house</p>
+            </li>
+            <li class="flex items-center text-xl font-medium gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-6"
+              />
+              <p>Manufacture</p>
+            </li>
+            <li class="flex items-center text-xl font-medium gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-6"
+              />
+              <p>Deliver</p>
+            </li>
+            <li class="flex items-center text-xl font-medium gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-6"
+              />
+              <p>Installation</p>
+            </li>
+          </menu>
+        </div>
+        <div
+          class="w-full h-full flex items-center justify-center aspect-square relative z-10 group"
+        >
+          <div class="absolute h-full w-auto">
+            <span
+              style="
+                background: radial-gradient(
+                  73.86% 73.86% at 50% 26.14%,
+                  #5e5e5e 0%,
+                  #000000 100%
+                );
+              "
+              class="absolute h-[calc(100%-80px)] w-full -z-10 rounded-2xl bottom-0"
+            ></span>
+            <span
+              style="background: var(--color-primary)"
+              class="absolute h-[calc(100%-80px)] w-full -z-10 rounded-2xl bottom-0 group-hover:opacity-100 opacity-0 duration-500"
+            ></span>
+
+            <img
+              src="./common/assets/images/home/Quality section.webp"
+              class="h-full object-contain saturate-0 group-hover:saturate-100 duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white w-full overflow-hidden">
+      <menu class="wrapper main_padding_y flex flex-col">
+        <li
+          class="flex main_padding_b items-center justify-between w-full gap-20 group"
+        >
+          <h2
+            class="md:text-5xl text-4xl font-primary max-w-[20ch] shrink-0 flex items-center justify-center gap-3 relative"
+          >
+            Our Products & Service
+            <img
+              src="./common/assets/icons/arrow .svg"
+              alt=""
+              class="rounded-full h-4 translate-y-1 -rotate-45 group-hover:translate-y-2.5 duration-300"
+            />
+            <span
+              class="absolute left-0 w-full h-[1px] bottom-0 bg-transparent group-hover:bg-black duration-500"
+            ></span>
+          </h2>
+          <menu class="flex flex-col gap-3">
+            <li class="flex items-baseline gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-4 translate-y-1"
+              />
+              <p class="text-base font-medium max-w-[20ch]">
+                High quality products using state of the art systems and
+                technology
+              </p>
+            </li>
+            <li class="flex items-baseline gap-3">
+              <img
+                src="./common/assets/icons/arrow white.svg"
+                alt=""
+                class="p-1 aspect-square bg-primary rounded-full h-4 translate-y-1"
+              />
+              <p class="text-base font-medium max-w-[20ch]">British standard</p>
+            </li>
+          </menu>
+        </li>
+        <li
+          class="grid grid-flow-col items-center relative z-0 justify-between main_padding_y border-t border-black w-full gap-20 group text-black hover:text-white"
+        >
+          <div class="flex flex-col gap-3">
+            <h2 class="md:text-4xl text-3xl font-medium max-w-[20ch] shrink-0">
+              Aluminium panels
+            </h2>
+            <p class="font-light">
+              Aluminium panels are widely adopted for false ceilings
+            </p>
+          </div>
+          <div
+            class="aspect-square w-auto h-full scale-[3] -translate-x-11 relative z-0 flex items-center justify-end"
+          >
+            <img
+              src="./common/assets/images/products/Aluminium panels.webp"
+              class="absolute h-full object-contain"
+            />
+          </div>
+          <span
+            class="absolute w-[200vw] group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2"
+          ></span>
+        </li>
+        <li
+          class="grid grid-flow-col items-center relative z-0 justify-between main_padding_y border-t border-black w-full gap-20 group text-black hover:text-white"
+        >
+          <div class="flex flex-col gap-3">
+            <h2 class="md:text-4xl text-3xl font-medium max-w-[20ch] shrink-0">
+              Glass
+            </h2>
+            <p class="font-light">
+              Glass is used for vials in science. In renewable energy
+            </p>
+          </div>
+          <div
+            class="aspect-square w-auto h-full scale-[3] -translate-x-11 relative z-0 flex items-center justify-end"
+          >
+            <img
+              src="./common/assets/images/products/Glass.webp"
+              class="absolute h-full object-contain"
+            />
+          </div>
+          <span
+            class="absolute w-[200vw] group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2"
+          ></span>
+        </li>
+      </menu>
+    </section>
+    <section class="bg-[#F3F3F3] w-full overflow-hidden">
+      <div class="wrapper main_padding_y flex flex-col overflow-visible">
+        <div class="flex items-center justify-between gap-20">
+          <h2 class="md:text-5xl text-4xl font-primary max-w-[20ch] shrink-0">
+            Glass products
+          </h2>
+          <div class="flex items-center justify-end gap-10">
+            <button class="flex items-center justify-center swiper_prev_btn">
+              <img
+                src="./common/assets/icons/arrow black for glass section swiper.svg"
+                class="object-contain h-6 w-auto"
+              />
+            </button>
+            <button class="flex items-center justify-center swiper_next_btn">
+              <img
+                src="./common/assets/icons/arrow black for glass section swiper.svg"
+                class="object-contain h-6 w-auto rotate-180"
+              />
+            </button>
+          </div>
+        </div>
+
+        <swiper-container
+          slides-per-view="auto"
+          speed="500"
+          loop="true"
+          autoplay
+          mousewheel-force-to-axis="true"
+          space-between="20"
+          class="overflow-visible glass-products-slider mt-16"
+        >
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Interior product.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Interior product
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                interior glass products are widely adopted for design
+                generations
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Display units.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Display units
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                Display units products are widely adopted for showcase products
+                and add products
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Shower cubicles.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Shower cubicles
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                used in bathroom to separate the shower from toilet
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Mirrors.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Mirrors
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                a polished or smooth surface (as of glass) that forms images by
+                reflection
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Glass balustrade.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Glass balustrade
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                frameless glass panels that are used to create a barrier and
+                offer safety
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Glass furniture.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Glass furniture
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                a contemporary design trend that's making waves in the world of
+                interior decor
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+          >
+            <div
+              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+            >
+              <img
+                src="./common/assets/images/products/glass/Glass kiosk.webp"
+                alt=""
+                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+              />
+            </div>
+            <div class="flex flex-col px-2 mt-4 h-full">
+              <h4
+                class="text-xl font-medium text-black duration-500 group-hover:text-white"
+              >
+                Glass kiosk
+              </h4>
+              <p
+                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
+              >
+                used in high-traffic areas for marketing purposes
+              </p>
+              <a
+                href=""
+                class="mt-auto font-bold text-primary group-hover:underline"
+                >View more</a
+              >
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        <a href="" class="normalBtn mt-8"
+          >View Products Section
+
+          <span>
+            <svg
+              width="18"
+              height="15"
+              viewBox="0 0 18 15"
+              fill="none"
+              color="#EF5025"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                fill="currentcolor"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="bg-black text-white w-full overflow-hidden">
+      <div class="wrapper main_padding_y flex flex-col gap-10">
+        <div class="w-full grid grid-cols-2 gap-20">
+          <div class="flex flex-col items-start">
+            <h2
+              class="md:text-5xl text-4xl font-primary shrink-0 flex items-center justify-center gap-3 relative group"
+            >
+              About HAS
+              <img
+                src="./common/assets/icons/arrow .svg"
+                alt=""
+                class="rounded-full h-4 translate-y-1 -rotate-45 group-hover:translate-y-2.5 duration-300 invert"
+              />
+              <span
+                class="absolute left-0 w-full h-[1px] bottom-0 bg-transparent group-hover:bg-white duration-500"
+              ></span>
+            </h2>
+            <p class="text-xl mt-4">
+              <b> Haris Architectural Systems (HAS) </b> is a leader in
+              manufacturing state-of-the-art aluminium and glass products.
+              <b>Our commitment to quality and precision </b> ensures that every
+              project is completed to the highest standards.
+            </p>
+          </div>
+          <div
+            class="flex items-center w-full justify-center rounded-lg relative z-0 overflow-hidden min-h-[300px]"
+          >
+            <img src="./common/assets/images/home/About HAS.webp" alt="" class="absolute inset-0 size-full object-cover" />
+          </div>
+        </div>
+        <div class="border-t border-white relative z-0 flex items-center" >
+          <span class="w-2 h-2 bg-white rounded-full absolute -top-[1px] left-0 -translate-y-1/2"></span>
+          <div class="flex w-full justify-between items-center gap-3 mt-6">
+
+            <p class="font-medium">Established Year</p>
+            <p class="font-medium">2000 - 2024</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="mt-40"></footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script
     type="module"
     crossorigin="anonymous"
