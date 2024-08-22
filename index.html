@@ -29,29 +29,132 @@
     </script>
   </head>
   <body class="flex flex-col w-full items-center justify-center">
-    <header></header>
+    <header
+      class="absolute top-10 left-0 w-full flex items-center justify-center z-[9999]"
+    >
+      <div
+        style="
+          background: rgba(64, 64, 64, 0.16);
+          box-shadow: 1px 8px 7px 1px rgb(0 0 0 / 53%),
+            inset 0px 0.4px 0px 0px rgb(229 227 227 / 53%);
+          backdrop-filter: blur(19.8593px);
+        "
+        class="wrapper flex items-center justify-between py-5 px-10 relative z-0 overflow-hidden text-white rounded-2xl"
+      >
+        <a href="./index.html">
+          <img
+            src="./common/assets/images/logo white.png"
+            alt=""
+            class="h-16 w-auto object-contain"
+          />
+        </a>
+        <div class="flex flex-col justify-between gap-6 max-lg:hidden">
+          <div
+            class="flex items-center justify-end gap-3 text-white font-light"
+          >
+            <a
+              ><img
+                src="./common/assets/icons/instagram.webp"
+                alt=""
+                class="w-5 h-5 object-contain invert opacity-50"
+            /></a>
+            <a
+              ><img
+                src="./common/assets/icons/twitter.webp"
+                alt=""
+                class="w-5 h-5 object-contain invert opacity-50"
+            /></a>
+            <a
+              ><img
+                src="./common/assets/icons/whatsapp.webp"
+                alt=""
+                class="w-5 h-5 object-contain invert opacity-50"
+            /></a>
+            <a> Has@inquiry.com</a>
+          </div>
+          <menu class="font-bold text-base flex items-center justify-end gap-8">
+            <li>
+              <a class="hover:text-primary text-primary duration-500">Home</a>
+            </li>
+            <li class="flex items-center justify-center gap-2 relative group">
+              <div class="duration-500 group-hover:text-primary">Company</div>
+              <svg
+                class="h-2 w-auto text-white group-hover:text-primary duration-500 group-hover:rotate-180"
+                viewBox="0 0 16 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.125 6.625L13.875 0.875L15.625 2.625L8.125 10.125L0.625 2.625L2.375 0.875L8.125 6.625Z"
+                  fill="currentcolor"
+                />
+              </svg>
+              <span class="absolute h-14 top-0 left-0 w-full"> </span>
+
+              <menu
+                style="
+                  background: rgba(64, 64, 64, 0.582);
+                  box-shadow: 0px 4.53926px 4.53926px rgba(0, 0, 0, 0.25);
+                  backdrop-filter: blur(19.8593px);
+                "
+                class="absolute top-10 px-6 py-4 flex flex-col text-center gap-2 rounded-lg opacity-0 duration-500 translate-y-full pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
+              >
+                <a class="hover:text-primary duration-500 cursor-pointer"
+                  >About Us</a
+                >
+                <a class="hover:text-primary duration-500 cursor-pointer"
+                  >Sustainablity</a
+                >
+                <a class="hover:text-primary duration-500 cursor-pointer"
+                  >CSR</a
+                >
+              </menu>
+            </li>
+            <li>
+              <a class="hover:text-primary duration-500">Product & Service</a>
+            </li>
+            <li>
+              <a class="hover:text-primary duration-500">Blog</a>
+            </li>
+            <li>
+              <a
+                class="px-6 py-2 h-full rounded-md bg-primary text-sm duration-500"
+                >Contact Now</a
+              >
+            </li>
+          </menu>
+        </div>
+        <span
+          class="bg-white/[.03] absolute top-0 left-0 h-1/2 w-full -z-10 rounded-2xl"
+        ></span>
+      </div>
+    </header>
 
     <section id="leadingHeroSection" class="w-full relative z-0">
       <div
         class="wrapper main_padding_y flex items-center justify-center h-screen relative z-0 overflow-hidden text-white"
       >
         <div class="flex items-center w-full h-full justify-start relative z-0">
-          <div class="flex flex-col pl-20">
+          <div class="flex flex-col md:pl-20 w-full">
             <div
-              class="relative z-0 overflow-y-clip font-primary text-6xl tracking-[0%] w-full"
+              class="relative z-0 overflow-y-clip font-primary lg:text-6xl sm:text-5xl text-4xl tracking-[0%] w-full"
             >
               <div class="opacity-0 w-full headingHight"></div>
 
-              <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
-                Aluminium Solutions <br />
-                Crafted for Excellence
+              <h1
+                class="heading absolute top-0 left-0 shrink-0 md:max-w-[20ch]"
+              >
+                Aluminium Solutions Crafted for Excellence
               </h1>
-              <h1 class="heading absolute top-0 left-0 shrink-0 w-max">
-                Crystal Clear Quality in <br />
-                Every Glass “Solution”
+              <h1
+                class="heading absolute top-0 left-0 shrink-0 md:max-w-[20ch]"
+              >
+                Crystal Clear Quality in Every Glass “Solution”
               </h1>
             </div>
-            <div class="flex items-start text-lg gap-3 mt-16">
+            <div
+              class="flex items-start md:text-lg text-base gap-3 md:mt-16 mt-6"
+            >
               <img
                 src="./common/assets/icons/arrow .svg"
                 alt=""
@@ -90,9 +193,8 @@
           </div>
           <!-- left index Slider -->
           <div
-            style="grid-template-rows: repeat(3, minmax(0, 1fr))"
             data-slider-pagination
-            class="absolute left-0 h-40 w-0.5 grid gap-1 [&_span]:bg-white [&_span]:h-full [&_span]:w-full"
+            class="absolute max-md:hidden left-0 h-40 w-0.5 grid gap-1 [&_span]:bg-white [&_span]:h-full [&_span]:w-full"
           ></div>
         </div>
       </div>
@@ -112,49 +214,53 @@
     </section>
 
     <section class="bg-[#F3F3F3] w-full">
-      <div class="wrapper main_padding_y grid grid-cols-2 items-center gap-10">
+      <div
+        class="wrapper main_padding_y grid md:grid-cols-2 items-center gap-10"
+      >
         <div class="flex flex-col gap-10">
-          <h2 class="md:text-5xl text-4xl font-primary max-w-[20ch]">
+          <h2 class="md:text-5xl text-3xl font-primary max-w-[20ch]">
             Manufacturing dealing , Distributing Quality
           </h2>
-          <menu class="pl-10 flex flex-col gap-5">
-            <li class="flex items-center text-xl font-medium gap-3">
+          <menu
+            class="md:pl-10 pl-4 flex flex-col md:gap-5 gap-4 md:text-xl text-lg"
+          >
+            <li class="flex items-center font-medium gap-3">
               <img
                 src="./common/assets/icons/arrow white.svg"
                 alt=""
-                class="p-1 aspect-square bg-primary rounded-full h-6"
+                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
               />
               <p>Design with you in collaboration</p>
             </li>
-            <li class="flex items-center text-xl font-medium gap-3">
+            <li class="flex items-center font-medium gap-3">
               <img
                 src="./common/assets/icons/arrow white.svg"
                 alt=""
-                class="p-1 aspect-square bg-primary rounded-full h-6"
+                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
               />
               <p>Extrude the aluminium in house</p>
             </li>
-            <li class="flex items-center text-xl font-medium gap-3">
+            <li class="flex items-center font-medium gap-3">
               <img
                 src="./common/assets/icons/arrow white.svg"
                 alt=""
-                class="p-1 aspect-square bg-primary rounded-full h-6"
+                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
               />
               <p>Manufacture</p>
             </li>
-            <li class="flex items-center text-xl font-medium gap-3">
+            <li class="flex items-center font-medium gap-3">
               <img
                 src="./common/assets/icons/arrow white.svg"
                 alt=""
-                class="p-1 aspect-square bg-primary rounded-full h-6"
+                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
               />
               <p>Deliver</p>
             </li>
-            <li class="flex items-center text-xl font-medium gap-3">
+            <li class="flex items-center font-medium gap-3">
               <img
                 src="./common/assets/icons/arrow white.svg"
                 alt=""
-                class="p-1 aspect-square bg-primary rounded-full h-6"
+                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
               />
               <p>Installation</p>
             </li>
@@ -190,10 +296,10 @@
     <section class="bg-white w-full overflow-hidden">
       <menu class="wrapper main_padding_y flex flex-col">
         <li
-          class="flex main_padding_b items-center justify-between w-full gap-20 group"
+          class="flex main_padding_b md:items-center items-start md:justify-between max-md:flex-col w-full md:gap-20 gap-6 group"
         >
           <h2
-            class="md:text-5xl text-4xl font-primary max-w-[20ch] shrink-0 flex items-center justify-center gap-3 relative"
+            class="md:text-5xl text-3xl font-primary max-w-[20ch] shrink-0 flex items-center justify-center gap-3 relative"
           >
             Our Products & Service
             <img
@@ -212,7 +318,7 @@
                 alt=""
                 class="p-1 aspect-square bg-primary rounded-full h-4 translate-y-1"
               />
-              <p class="text-base font-medium max-w-[20ch]">
+              <p class="text-base font-medium md:max-w-[20ch]">
                 High quality products using state of the art systems and
                 technology
               </p>
@@ -223,15 +329,17 @@
                 alt=""
                 class="p-1 aspect-square bg-primary rounded-full h-4 translate-y-1"
               />
-              <p class="text-base font-medium max-w-[20ch]">British standard</p>
+              <p class="text-base font-medium md:max-w-[20ch]">
+                British standard
+              </p>
             </li>
           </menu>
         </li>
         <li
-          class="grid grid-flow-col items-center relative z-0 justify-between main_padding_y border-t border-black w-full gap-20 group text-black hover:text-white"
+          class="md:grid flex flex-col-reverse grid-flow-col items-center relative z-0 justify-between main_padding_y border-t border-black w-full md:gap-20 gap-6 group text-black hover:text-white"
         >
-          <div class="flex flex-col gap-3">
-            <h2 class="md:text-4xl text-3xl font-medium max-w-[20ch] shrink-0">
+          <div class="flex flex-col md:gap-3 gap-2">
+            <h2 class="md:text-4xl text-2xl font-medium max-w-[20ch] shrink-0">
               Aluminium panels
             </h2>
             <p class="font-light">
@@ -239,22 +347,22 @@
             </p>
           </div>
           <div
-            class="aspect-square w-auto h-full scale-[3] -translate-x-11 relative z-0 flex items-center justify-end"
+            class="md:aspect-square md:w-auto w-full md:h-full md:scale-[3] md:-translate-x-11 relative z-0 flex items-center justify-end max-md:bg-[#F3F3F3] max-md:p-3 max-md:rounded-md"
           >
             <img
               src="./common/assets/images/products/Aluminium panels.webp"
-              class="absolute h-full object-contain"
+              class="md:md:absolute h-full object-contain"
             />
           </div>
           <span
-            class="absolute w-[200vw] group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2"
+            class="absolute w-[200vw] max-md:hidden group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2"
           ></span>
         </li>
         <li
-          class="grid grid-flow-col items-center relative z-0 justify-between main_padding_y border-t border-black w-full gap-20 group text-black hover:text-white"
+          class="md:grid flex flex-col-reverse grid-flow-col items-center relative z-0 justify-between main_padding_y border-t border-black w-full md:gap-20 gap-6 group text-black hover:text-white"
         >
-          <div class="flex flex-col gap-3">
-            <h2 class="md:text-4xl text-3xl font-medium max-w-[20ch] shrink-0">
+          <div class="flex flex-col md:gap-3 gap-2">
+            <h2 class="md:text-4xl text-2xl font-medium max-w-[20ch] shrink-0">
               Glass
             </h2>
             <p class="font-light">
@@ -262,26 +370,26 @@
             </p>
           </div>
           <div
-            class="aspect-square w-auto h-full scale-[3] -translate-x-11 relative z-0 flex items-center justify-end"
+            class="md:aspect-square md:w-auto w-full md:h-full md:scale-[3] md:-translate-x-11 relative z-0 flex items-center justify-end max-md:bg-[#F3F3F3] max-md:p-3 max-md:rounded-md"
           >
             <img
               src="./common/assets/images/products/Glass.webp"
-              class="absolute h-full object-contain"
+              class="md:absolute h-full object-contain"
             />
           </div>
           <span
-            class="absolute w-[200vw] group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2"
+            class="absolute w-[200vw] group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2 max-md:hidden"
           ></span>
         </li>
       </menu>
     </section>
     <section class="bg-[#F3F3F3] w-full overflow-hidden">
       <div class="wrapper main_padding_y flex flex-col overflow-visible">
-        <div class="flex items-center justify-between gap-20">
-          <h2 class="md:text-5xl text-4xl font-primary max-w-[20ch] shrink-0">
+        <div class="flex items-center justify-between md:gap-20">
+          <h2 class="md:text-5xl text-3xl font-primary max-w-[20ch] shrink-0">
             Glass products
           </h2>
-          <div class="flex items-center justify-end gap-10">
+          <div class="flex items-center justify-end gap-10 max-md:hidden">
             <button class="flex items-center justify-center swiper_prev_btn">
               <img
                 src="./common/assets/icons/arrow black for glass section swiper.svg"
@@ -304,7 +412,7 @@
           autoplay
           mousewheel-force-to-axis="true"
           space-between="20"
-          class="overflow-visible glass-products-slider mt-16"
+          class="overflow-visible glass-products-slider md:mt-16 mt-6"
         >
           <swiper-slide
             class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black"
@@ -332,7 +440,7 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
@@ -363,7 +471,7 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
@@ -393,7 +501,7 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
@@ -424,7 +532,7 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
@@ -455,7 +563,7 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
@@ -486,7 +594,7 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
@@ -516,13 +624,13 @@
               </p>
               <a
                 href=""
-                class="mt-auto font-bold text-primary group-hover:underline"
+                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
                 >View more</a
               >
             </div>
           </swiper-slide>
         </swiper-container>
-        <a href="" class="normalBtn mt-8"
+        <a href="" class="normalBtn md:mt-8 mt-4 hoverWhite"
           >View Products Section
 
           <span>
@@ -545,10 +653,10 @@
     </section>
     <section class="bg-black text-white w-full overflow-hidden">
       <div class="wrapper main_padding_y flex flex-col gap-10">
-        <div class="w-full grid grid-cols-2 gap-20">
+        <div class="w-full grid md:grid-cols-2 md:gap-20 gap-10">
           <div class="flex flex-col items-start">
             <h2
-              class="md:text-5xl text-4xl font-primary shrink-0 flex items-center justify-center gap-3 relative group"
+              class="md:text-5xl text-3xl font-primary shrink-0 flex items-center justify-center gap-3 relative group"
             >
               About HAS
               <img
@@ -560,7 +668,7 @@
                 class="absolute left-0 w-full h-[1px] bottom-0 bg-transparent group-hover:bg-white duration-500"
               ></span>
             </h2>
-            <p class="text-xl mt-4">
+            <p class="md:text-xl text-base mt-4">
               <b> Haris Architectural Systems (HAS) </b> is a leader in
               manufacturing state-of-the-art aluminium and glass products.
               <b>Our commitment to quality and precision </b> ensures that every
@@ -570,24 +678,614 @@
           <div
             class="flex items-center w-full justify-center rounded-lg relative z-0 overflow-hidden min-h-[300px]"
           >
-            <img src="./common/assets/images/home/About HAS.webp" alt="" class="absolute inset-0 size-full object-cover" />
+            <img
+              src="./common/assets/images/home/About HAS.webp"
+              alt=""
+              class="absolute inset-0 size-full object-cover"
+            />
           </div>
         </div>
-        <div class="border-t border-white relative z-0 flex items-center" >
-          <span class="w-2 h-2 bg-white rounded-full absolute -top-[1px] left-0 -translate-y-1/2"></span>
+        <div class="border-t border-white relative z-0 flex items-center">
+          <span
+            class="w-2 h-2 bg-white rounded-full absolute -top-[1px] left-0 -translate-y-1/2"
+          ></span>
           <div class="flex w-full justify-between items-center gap-3 mt-6">
-
             <p class="font-medium">Established Year</p>
             <p class="font-medium">2000 - 2024</p>
-
           </div>
         </div>
       </div>
     </section>
-    <footer class="mt-40"></footer>
+    <section class="bg-black text-white w-full overflow-hidden">
+      <div class="wrapper main_padding_y flex flex-col gap-10">
+        <h2 class="md:text-5xl text-3xl font-primary">HAS industry quality</h2>
+        <menu
+          class="grid sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] text-black gap-10"
+        >
+          <li
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+          >
+            <img
+              src="./common/assets/icons/industry quality/In-House Production.svg"
+              alt=""
+              class="md:w-14 w-8 md:h-14 h-8 object-contain"
+            />
+            <div class="flex flex-col gap-2 items-start justify-between">
+              <h4 class="md:text-2xl text-xl font-medium">
+                In-House Production
+              </h4>
+              <p class="text-base">From Design to Delivery</p>
+            </div>
+          </li>
+          <li
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+          >
+            <img
+              src="./common/assets/icons/industry quality/Bespoke Solutions.svg"
+              alt=""
+              class="md:w-14 w-8 md:h-14 h-8 object-contain"
+            />
+            <div class="flex flex-col gap-2 items-start justify-between">
+              <h4 class="md:text-2xl text-xl font-medium">Bespoke Solutions</h4>
+              <p class="text-base">Customized to Your Needs</p>
+            </div>
+          </li>
+          <li
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+          >
+            <img
+              src="./common/assets/icons/industry quality/Sustainability.svg"
+              alt=""
+              class="md:w-14 w-8 md:h-14 h-8 object-contain"
+            />
+            <div class="flex flex-col gap-2 items-start justify-between">
+              <h4 class="md:text-2xl text-xl font-medium">Sustainability</h4>
+              <p class="text-base">Eco-Friendly and Efficient</p>
+            </div>
+          </li>
+          <li
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+          >
+            <img
+              src="./common/assets/icons/industry quality/High Quality.svg"
+              alt=""
+              class="md:w-14 w-8 md:h-14 h-8 object-contain"
+            />
+            <div class="flex flex-col gap-2 items-start justify-between">
+              <h4 class="md:text-2xl text-xl font-medium">High Quality</h4>
+              <p class="text-base">British Standards Compliance</p>
+            </div>
+          </li>
+        </menu>
+      </div>
+    </section>
+    <section class="bg-white text-black w-full overflow-hidden">
+      <div
+        class="wrapper main_padding_y flex items-center justify-between max-md:flex-wrap md:gap-20 gap-6 group"
+      >
+        <h2 class="md:text-5xl text-3xl font-primary max-w-[24ch]">
+          Ready to transform your vision into reality with sustainable and
+          socially responsible solutions ?
+        </h2>
+        <a href="" class="normalBtn hoverWhite shrink-0"
+          >Order now
+
+          <span>
+            <svg
+              width="18"
+              height="15"
+              viewBox="0 0 18 15"
+              fill="none"
+              color="#EF5025"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                fill="currentcolor"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section
+      id="Solution_for_Every_users"
+      class="bg-[#F3F3F3] text-black w-full overflow-hidden"
+    >
+      <div class="wrapper main_padding_y flex items-center flex-col gap-10">
+        <div class="grid md:grid-cols-2 md:gap-20 gap-4 w-full">
+          <h2 class="md:text-5xl text-4xl font-primary max-w-[24ch]">
+            Solution for Every users
+          </h2>
+
+          <p class="text-base">
+            At Haris Architectural Systems, we pride ourselves on offering
+            comprehensive solutions that cater to the diverse needs of our
+            clients. Our expertise spans across multiple areas, ensuring that we
+            deliver innovative, sustainable, and aesthetically pleasing results
+            in every project
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-20 gap-6 w-full">
+          <div
+            class="flex flex-col items-start justify-center w-full max-md:order-1"
+          >
+            <menu
+              class="w-full md:text-xl text-lg font-bold flex flex-col md:gap-10 gap-3"
+            >
+              <li
+                data-item-id="1"
+                class="flex w-full items-center justify-start relative z-0 hover:text-primary duration-300 [&_span]:bg-black pb-1"
+              >
+                Solution
+                <span
+                  class="absolute w-full h-[2px] bottom-0 left-0 duration-300"
+                ></span>
+              </li>
+              <li
+                data-item-id="2"
+                class="flex w-full items-center justify-start relative z-0 hover:text-primary duration-300 [&_span]:bg-black pb-1"
+              >
+                Sustainablity
+                <span
+                  class="absolute w-full h-[2px] bottom-0 left-0 duration-300"
+                ></span>
+              </li>
+              <li
+                data-item-id="3"
+                class="flex w-full items-center justify-start relative z-0 hover:text-primary duration-300 [&_span]:bg-black pb-1"
+              >
+                CSR
+                <span
+                  class="absolute w-full h-[2px] bottom-0 left-0 duration-300"
+                ></span>
+              </li>
+            </menu>
+            <a href="" class="normalBtn mt-8 hoverWhite shrink-0"
+              >View more details
+
+              <span>
+                <svg
+                  width="18"
+                  height="15"
+                  viewBox="0 0 18 15"
+                  fill="none"
+                  color="#EF5025"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                    fill="currentcolor"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="aspect-video w-full h-auto relative z-0 overflow-hidden">
+            <img
+              data-img-id="1"
+              src="./common/assets/images/home/Solution/Solution.webp"
+              alt=""
+              class="absolute size-full inset-0 object-cover"
+            />
+            <img
+              data-img-id="2"
+              src="./common/assets/images/home/Solution/Sustainablity.webp"
+              alt=""
+              class="absolute size-full inset-0 object-cover"
+            />
+            <img
+              data-img-id="3"
+              src="./common/assets/images/home/Solution/CSR.webp"
+              alt=""
+              class="absolute size-full inset-0 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white text-black w-full overflow-hidden">
+      <div
+        class="wrapper main_padding_y flex md:items-center items-start flex-col md:gap-10 gap-6 overflow-hidden"
+      >
+        <h2 class="md:text-5xl text-3xl font-primary max-w-[24ch]">
+          Speak of Excellence !
+        </h2>
+
+        <div class="w-full overflow-hidden">
+        <swiper-container
+          slides-per-view="1"
+          speed="500"
+          loop="true"
+          autoplay
+          mousewheel-force-to-axis="true"
+          space-between="0"
+          class="overflow-visible Speak-of-Excellence md:mt-16 group cursor-pointer"
+        >
+          <swiper-slide
+            class="flex flex-col w-[min(100%,360px)] bg-white rounded-3xl group overflow-hidden md:p-6 p-4 duration-500 border border-black h-auto cursor-pointer"
+          >
+            <div class="flex items-center justify-start gap-4">
+              <img
+                src="./common/assets/images/people/James clerk .webp"
+                alt=""
+                class="md:h-14 md:w-14 h-7 w-7 rounded-full"
+              />
+              <div>
+                <h4 class="font-medium text-xl">James clerk</h4>
+                <p class="text-sm text-black/50 font-medium">Ceo of company</p>
+              </div>
+            </div>
+            <p
+              class="md:text-2xl text-xl font-medium text-black md:mt-7 mt-4 md:mb-6 mb-4"
+            >
+              “ The service of <b> HAS </b> made me easy”
+            </p>
+            <div class="flex gap-1 items-center justify-start mt-auto">
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,360px)] bg-white rounded-3xl group overflow-hidden p-6 duration-500 border border-black h-auto"
+          >
+            <div class="flex items-center justify-start gap-4">
+              <img
+                src="./common/assets/images/people/James clerk .webp"
+                alt=""
+                class="md:h-14 md:w-14 h-7 w-7 rounded-full"
+              />
+              <div>
+                <h4 class="font-medium text-xl">James clerk</h4>
+                <p class="text-sm text-black/50 font-medium">Ceo of company</p>
+              </div>
+            </div>
+            <p
+              class="md:text-2xl text-xl font-medium text-black md:mt-7 mt-4 md:mb-6 mb-4"
+            >
+              “ The service of <b> HAS </b> made me easy” “ The service of
+              <b> HAS </b> made me easy”
+            </p>
+            <div class="flex gap-1 items-center justify-start mt-auto">
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            class="shadow-md flex flex-col w-[min(100%,360px)] bg-white rounded-3xl group overflow-hidden p-6 duration-500 border border-black h-auto"
+          >
+            <div class="flex items-center justify-start gap-4">
+              <img
+                src="./common/assets/images/people/James clerk .webp"
+                alt=""
+                class="md:h-14 md:w-14 h-7 w-7 rounded-full"
+              />
+              <div>
+                <h4 class="font-medium text-xl">James clerk</h4>
+                <p class="text-sm text-black/50 font-medium">Ceo of company</p>
+              </div>
+            </div>
+            <p
+              class="md:text-2xl text-xl font-medium text-black md:mt-7 mt-4 md:mb-6 mb-4"
+            >
+              “ The service of <b> HAS </b> made me easy” “ The service of
+              <b> HAS </b> made me easy”
+            </p>
+            <div class="flex gap-1 items-center justify-start mt-auto">
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+              <img
+                src="./common/assets/icons/star.svg"
+                class="h-5 w-5 object-contain"
+              />
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      </div>
+    </section>
+    <section class="bg-black text-white w-full overflow-hidden">
+      <div
+        class="wrapper main_padding_y flex items-start flex-col md:gap-10 gap-4"
+      >
+        <h2
+          class="md:text-5xl text-3xl font-primary shrink-0 flex items-center justify-center gap-3 relative group"
+        >
+          Our Blog
+          <img
+            src="./common/assets/icons/arrow .svg"
+            alt=""
+            class="rounded-full h-4 translate-y-1 -rotate-45 group-hover:translate-y-2.5 duration-300 invert"
+          />
+          <span
+            class="absolute left-0 w-full h-[1px] bottom-0 bg-transparent group-hover:bg-white duration-500"
+          ></span>
+        </h2>
+        <div
+          class="grid lg:grid-cols-[1.2fr_.8fr] gap-6 w-full h-full relative"
+        >
+          <swiper-container
+            slides-per-view="1"
+            speed="500"
+            loop="true"
+            autoplay
+            mousewheel-force-to-axis="true"
+            class="blogSwiperLeftContainer w-full text-black md:aspect-[10/7] relative overflow-hidden"
+          >
+            <swiper-slide
+              class="shadow-md flex flex-col items-start bg-white rounded-3xl group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
+            >
+              <div
+                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+              >
+                <img
+                  src="./common/assets/images/blogs/HAS new head quarter.webp"
+                  alt=""
+                  class="size-full absolute object-cover inset-0"
+                />
+              </div>
+              <h4
+                class="md:text-2xl text-xl flex items-center justify-center gap-3 relative group/title max-md:mt-4"
+              >
+                HAS new head quarter
+                <img
+                  src="./common/assets/icons/arrow .svg"
+                  alt=""
+                  class="rounded-full h-3 translate-y-1 -rotate-45 group-hover/title:translate-y-2.5 duration-300"
+                />
+              </h4>
+              <p class="text-base max-md:mt-1">
+                HAS is opening new Head Quarter in new location on 12/2/2025
+                innagurated by ceo of facebook.
+              </p>
+            </swiper-slide>
+
+            <swiper-slide
+              class="shadow-md flex flex-col items-start bg-white rounded-3xl group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
+            >
+              <div
+                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+              >
+                <img
+                  src="./common/assets/images/blogs/HAS new head quarter.webp"
+                  alt=""
+                  class="size-full absolute object-cover inset-0"
+                />
+              </div>
+              <h4
+                class="md:text-2xl text-xl flex items-center justify-center gap-3 relative group/title max-md:mt-4"
+              >
+                HAS new head quarter
+                <img
+                  src="./common/assets/icons/arrow .svg"
+                  alt=""
+                  class="rounded-full h-3 translate-y-1 -rotate-45 group-hover/title:translate-y-2.5 duration-300"
+                />
+              </h4>
+              <p class="text-base max-md:mt-1">
+                HAS is opening new Head Quarter in new location on 12/2/2025
+                innagurated by ceo of facebook.
+              </p>
+            </swiper-slide>
+          </swiper-container>
+          <div
+            class="absolute max-lg:hidden left-0 grid grid-cols-[1.2fr_.8fr] gap-6 w-full h-1 rounded-full -bottom-6 z-10"
+          >
+            <div class="flex items-center justify-center gap-1">
+              <span class="bg-white w-14 rounded-full h-full"></span>
+              <span class="bg-white/50 w-14 rounded-full h-full"></span>
+            </div>
+          </div>
+
+          <div class="grid md:grid-rows-2 gap-6 h-full text-black">
+            <div
+              class="shadow-md flex flex-col items-start w-full bg-white rounded-3xl group overflow-hidden p-4 duration-500 border border-black h-full md:gap-2"
+            >
+              <div
+                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+              >
+                <img
+                  src="./common/assets/images/blogs/HAS new head quarter 2.webp"
+                  alt=""
+                  class="size-full absolute object-cover inset-0"
+                />
+              </div>
+              <h4
+                class="md:text-xl text-lg flex items-center justify-center gap-3 relative group/title max-md:mt-4"
+              >
+                HAS new head quarter
+                <img
+                  src="./common/assets/icons/arrow .svg"
+                  alt=""
+                  class="rounded-full h-3 translate-y-1 -rotate-45 group-hover/title:translate-y-2.5 duration-300"
+                />
+              </h4>
+              <p class="text-sm max-md:mt-1">
+                HAS is opening new Head Quarter in new location on 12/2/2025
+                innagurated by ceo of facebook.
+              </p>
+            </div>
+            <div
+              class="shadow-md flex flex-col items-start w-full bg-white rounded-3xl group overflow-hidden p-4 duration-500 border border-black h-full md:gap-2"
+            >
+              <div
+                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+              >
+                <img
+                  src="./common/assets/images/blogs/HAS new head quarter 2.webp"
+                  alt=""
+                  class="size-full absolute object-cover inset-0"
+                />
+              </div>
+              <h4
+                class="md:text-xl text-lg flex items-center justify-center gap-3 relative group/title max-md:mt-4"
+              >
+                HAS new head quarter
+                <img
+                  src="./common/assets/icons/arrow .svg"
+                  alt=""
+                  class="rounded-full h-3 translate-y-1 -rotate-45 group-hover/title:translate-y-2.5 duration-300"
+                />
+              </h4>
+              <p class="text-sm max-md:mt-1">
+                HAS is opening new Head Quarter in new location on 12/2/2025
+                innagurated by ceo of facebook.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white text-black w-full overflow-hidden">
+      <div class="wrapper main_padding_t pb-6 flex items-start flex-col gap-6">
+        <div class="flex items-start justify-between gap-20 w-full max-md:flex-wrap">
+          <div class="flex flex-col gap-6">
+            <h2 class="md:text-5xl text-3xl font-primary max-w-[14ch]">
+              Ready to Elevate Your Next Project?
+            </h2>
+            <a href="" class="normalBtn md:mt-8 hoverWhite shrink-0"
+              >Order now
+
+              <span>
+                <svg
+                  width="18"
+                  height="15"
+                  viewBox="0 0 18 15"
+                  fill="none"
+                  color="#EF5025"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                    fill="currentcolor"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <menu class="flex items-start md:justify-end justify-start gap-10 max-sm:flex-wrap">
+            <li class="flex flex-col gap-6">
+              <h4 class="font-semibold text-lg">Quick links</h4>
+              <menu class="flex flex-col gap-3 font-medium text-sm">
+                <a>About Us</a>
+                <a>Why chose us</a>
+                <a>Contact us</a>
+              </menu>
+            </li>
+            <li class="flex flex-col gap-6">
+              <h4 class="font-semibold text-lg">Contact us</h4>
+              <menu class="flex flex-col gap-3 font-medium text-sm">
+                <a>Info@has.com</a>
+                <a>+91 9876543210</a>
+                <a>+91 9098765432</a>
+              </menu>
+            </li>
+            <li class="flex flex-col gap-6">
+              <h4 class="font-semibold text-lg">Social media</h4>
+              <menu class="flex flex-col gap-3 font-medium text-sm">
+                <a
+                  ><img
+                    src="./common/assets/icons/instagram.webp"
+                    alt=""
+                    class="w-5 h-5 object-contain"
+                /></a>
+                <a
+                  ><img
+                    src="./common/assets/icons/twitter.webp"
+                    alt=""
+                    class="w-5 h-5 object-contain"
+                /></a>
+                <a
+                  ><img
+                    src="./common/assets/icons/whatsapp.webp"
+                    alt=""
+                    class="w-5 h-5 object-contain"
+                /></a>
+              </menu>
+            </li>
+          </menu>
+        </div>
+        <div class="flex items-center justify-center w-full relative z-0">
+          <img
+            src="./common/assets/images/logo color.png"
+            alt=""
+            class="h-24 w-auto object-contain bg-white"
+          />
+          <span class="w-full absolute h-[1px] bg-black -z-10"></span>
+        </div>
+        <p class="text-center w-full">2024 rights reserved</p>
+      </div>
+    </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <script
     type="module"
     crossorigin="anonymous"

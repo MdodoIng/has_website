@@ -36,6 +36,7 @@
   border-radius: 14px;
   gap: 10px;
   font-weight: 800;
+  font-size: 16px;
   transition: all 0.3s ease;
   color: white;
 
@@ -68,6 +69,33 @@
 
       svg {
         color: black;
+      }
+    }
+  }
+  &.hoverWhite {
+    &:hover {
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-color: black;
+
+      span {
+        border: 1px solid black;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 6px 16px;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 14px;
+
+    span {
+      padding: 2px;
+
+      svg {
+        width: 16px;
+        height: 16px;
       }
     }
   }
