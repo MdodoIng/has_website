@@ -19,18 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = Number(element.getAttribute("data-item-id"));
     element.addEventListener("click", () => {
       if (activeElement) {
-        activeElement.classList.remove("[&_span]:bg-primary","text-primary");
-        activeElement.classList.add("[&_span]:bg-black", "text-black");
+        activeElement.classList.remove("[&_span]:!bg-primary", "!text-primary");
+        activeElement.classList.add("[&_span]:!bg-black", "!text-black");
       }
+
       if (count !== id) {
         count = id;
-        element.classList.remove("[&_span]:bg-black");
-        element.classList.add("[&_span]:bg-primary","text-primary");
+        element.classList.add("[&_span]:!bg-primary", "!text-primary");
+        element.classList.remove("[&_span]:!bg-black");
         activeElement = element;
+        disabledElement = null;
       } else {
-        element.classList.add("[&_span]:bg-black", "text-black");
-        element.classList.remove("[&_span]:bg-primary","text-primary");
+        element.classList.remove("[&_span]:!bg-primary", "!text-primary");
+        element.classList.add("[&_span]:!bg-black", "!text-black");
         activeElement = null;
+        disabledElement = element;
       }
       imageHide();
     });

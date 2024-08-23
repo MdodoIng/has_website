@@ -60,7 +60,7 @@ function animateBox() {
           }, 2600);
       },
       immediateRender: true,
-    }
+    },
   );
 }
 
@@ -83,7 +83,7 @@ function setHightOfPagination() {
         height: "100%",
         duration: "2",
         ease: "leaner",
-      }
+      },
     );
     if (idx < count) {
       gsap.to(element, {

@@ -7,7 +7,6 @@
     "development": "postcss --ignore node_modules common/styles/tailwind.main.css -o common/styles/tailwind.min.css",
     "production": "bunx tailwindcss -i common/styles/tailwind.main.css -o common/styles/tailwind.min.css",
     "start": "npm run serve",
-   
     "cssWatch": "bunx tailwindcss -i common/styles/tailwind.main.css -o common/styles/tailwind.min.css --watch --debounce 0",
     "formate": "npx prettier --write ."
   },
