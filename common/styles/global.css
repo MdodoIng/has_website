@@ -22,7 +22,7 @@
 
 .wrapper {
   margin-inline: auto;
-  width: min(84%, 1000rem);
+  width: min(84%, 1540px);
 }
 
 .normalBtn {
