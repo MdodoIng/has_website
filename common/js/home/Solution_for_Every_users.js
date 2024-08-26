@@ -28,12 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.add("[&_span]:!bg-primary", "!text-primary");
         element.classList.remove("[&_span]:!bg-black");
         activeElement = element;
-        disabledElement = null;
       } else {
         element.classList.remove("[&_span]:!bg-primary", "!text-primary");
         element.classList.add("[&_span]:!bg-black", "!text-black");
         activeElement = null;
-        disabledElement = element;
       }
       imageHide();
     });

@@ -36,12 +36,11 @@
       <div
         style="
           background: rgba(64, 64, 64, 0.16);
-          box-shadow:
-            1px 8px 7px 1px rgb(0 0 0 / 53%),
+          box-shadow: 1px 8px 7px 1px rgb(0 0 0 / 53%),
             inset 0px 0.4px 0px 0px rgb(229 227 227 / 53%);
           backdrop-filter: blur(19.8593px);
         "
-        class="wrapper flex items-center justify-between lg:py-5 py-3 ld:px-10 px-6 relative z-0 text-white rounded-2xl"
+        class="wrapper flex items-center justify-between lg:py-5 py-3 ld:px-10 px-6 relative z-0 text-white"
       >
         <a href="./index.html">
           <img
@@ -78,9 +77,12 @@
             class="font-bold text-base flex items-center justify-end gap-8 max-lg:hidden"
           >
             <li>
-              <a class="hover:text-primary duration-500 menuUnderLine">Home</a>
+              <a  href="./index.html" class="hover:text-primary duration-500 menuUnderLine">Home</a>
             </li>
-            <li class="flex items-center justify-center gap-2 relative group">
+            <li >
+              <a href="./about_us/index.html" class="hover:text-primary duration-500 ">About Us</a>
+            </li>
+            <!-- <li class="flex items-center justify-center gap-2 relative group">
               <div class="duration-500 group-hover:text-primary">Company</div>
               <svg
                 class="h-2 w-auto text-white group-hover:text-primary duration-500 group-hover:rotate-180"
@@ -101,7 +103,7 @@
                   box-shadow: 0px 4.53926px 4.53926px rgba(0, 0, 0, 0.25);
                   backdrop-filter: blur(19.8593px);
                 "
-                class="absolute top-10 px-6 py-4 flex flex-col text-center gap-2 rounded-lg opacity-0 duration-500 translate-y-full pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
+                class="absolute top-10 px-6 py-4 flex flex-col text-center gap-2 opacity-0 duration-500 translate-y-full pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
               >
                 <a class="hover:text-primary duration-500 cursor-pointer"
                   >About Us</a
@@ -113,16 +115,15 @@
                   >CSR</a
                 >
               </menu>
-            </li>
+            </li> -->
             <li>
-              <a class="hover:text-primary duration-500">Product & Service</a>
+              <a href="./productservice/index.html" class="hover:text-primary duration-500">Product & Service</a>
             </li>
             <li>
               <a class="hover:text-primary duration-500">Blog</a>
             </li>
             <li>
-              <a
-                class="px-6 py-2 h-full rounded-md bg-primary text-sm duration-500"
+              <a href="./contact_us/index.html" class="px-6 py-2 h-full bg-primary text-sm duration-500"
                 >Contact Now</a
               >
             </li>
@@ -163,14 +164,14 @@
               />
             </svg>
             <menu
-              class="flex flex-col top-14 -right-6 bg-[#F3F3F3] text-black absolute px-10 py-6 rounded-md gap-2 font-medium items-start text-start group-hover:translate-y-0 translate-y-full pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 duration-300"
+              class="flex flex-col top-14 -right-6 bg-[#F3F3F3] text-black absolute px-10 py-6 gap-2 font-medium items-start text-start group-hover:translate-y-0 translate-y-full pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 duration-300"
             >
               <li>
                 <a class="hover:text-primary duration-500 menuUnderLine"
                   >Home</a
                 >
               </li>
-              <li
+              <!-- <li
                 class="flex items-start justify-center gap-2 flex-col relative group/sub"
               >
                 <div
@@ -204,6 +205,9 @@
                     >CSR</a
                   >
                 </menu>
+              </li> -->
+              <li>
+                <a href="./about_us/index.html" class="hover:text-primary duration-500">About Us</a>
               </li>
               <li>
                 <a class="hover:text-primary duration-500">Product & Service</a>
@@ -218,7 +222,7 @@
           </button>
         </div>
         <span
-          class="bg-white/[.03] absolute top-0 left-0 h-1/2 w-full -z-10 rounded-2xl max-lg:hidden"
+          class="bg-white/[.03] absolute top-0 left-0 h-1/2 w-full -z-10 max-lg:hidden"
         ></span>
       </div>
     </header>
@@ -318,70 +322,41 @@
           >
             Manufacturing dealing , Distributing Quality
           </h2>
-          <menu
-            class="md:pl-10 pl-4 flex flex-col md:gap-5 gap-4 md:text-xl text-lg"
-          >
-            <li
-              data-aos="fade-up"
-              data-aos-delay="0"
-              class="flex items-center font-medium gap-3"
-            >
-              <img
-                src="./common/assets/icons/arrow white.svg"
-                alt=""
-                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
-              />
-              <p>Design with you in collaboration</p>
-            </li>
-            <li
-              data-aos="fade-up"
-              data-aos-delay="0"
-              class="flex items-center font-medium gap-3"
-            >
-              <img
-                src="./common/assets/icons/arrow white.svg"
-                alt=""
-                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
-              />
-              <p>Extrude the aluminium in house</p>
-            </li>
-            <li
-              data-aos="fade-up"
-              data-aos-delay="0"
-              class="flex items-center font-medium gap-3"
-            >
-              <img
-                src="./common/assets/icons/arrow white.svg"
-                alt=""
-                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
-              />
-              <p>Manufacture</p>
-            </li>
-            <li
-              data-aos="fade-up"
-              data-aos-delay="0"
-              class="flex items-center font-medium gap-3"
-            >
-              <img
-                src="./common/assets/icons/arrow white.svg"
-                alt=""
-                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
-              />
-              <p>Deliver</p>
-            </li>
-            <li
-              data-aos="fade-up"
-              data-aos-delay="0"
-              class="flex items-center font-medium gap-3"
-            >
-              <img
-                src="./common/assets/icons/arrow white.svg"
-                alt=""
-                class="p-1 aspect-square bg-primary rounded-full md:h-6 h-4"
-              />
-              <p>Installation</p>
-            </li>
-          </menu>
+          <p data-aos="fade-up" data-aos-delay="50" class="text-base">
+            e, and going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a
+            treatise on the theory of ethics, very popular during the
+            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+            amet..", comes from of Good and Evil) by Cicero, written in 45 BC.
+            This book is a treatise on the theory of ethics, very popular during
+            the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+            sit amet..", comes from
+          </p>
+          <a
+            data-aos="fade-up"
+            data-aos-delay="0"
+            href=""
+            class="normalBtn hoverWhite shrink-0"
+            >Order now
+
+            <span>
+              <svg
+                width="18"
+                height="15"
+                viewBox="0 0 18 15"
+                fill="none"
+                color="#EF5025"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
         <div
           data-aos="fade-up"
@@ -397,11 +372,11 @@
                   #000000 100%
                 );
               "
-              class="absolute h-[calc(100%-80px)] w-full -z-10 rounded-2xl bottom-0"
+              class="absolute h-[calc(100%-80px)] w-full -z-10 bottom-0"
             ></span>
             <span
               style="background: var(--color-primary)"
-              class="absolute h-[calc(100%-80px)] w-full -z-10 rounded-2xl bottom-0 group-hover:opacity-100 opacity-0 duration-500"
+              class="absolute h-[calc(100%-80px)] w-full -z-10 bottom-0 group-hover:opacity-100 opacity-0 duration-500"
             ></span>
 
             <img
@@ -413,7 +388,7 @@
       </div>
     </section>
     <section class="bg-white w-full overflow-hidden">
-      <menu class="wrapper main_padding_y flex flex-col">
+      <menu class="wrapper main_padding_y flex flex-col items-center">
         <li
           class="flex main_padding_b md:items-center items-start md:justify-between max-md:flex-col w-full md:gap-20 gap-6 group"
         >
@@ -480,7 +455,7 @@
             </p>
           </div>
           <div
-            class="md:aspect-square md:w-auto w-full md:h-full md:scale-[3] md:-translate-x-11 relative z-0 flex items-center justify-end max-md:bg-[#F3F3F3] max-md:p-3 max-md:rounded-md"
+            class="md:aspect-square md:w-auto w-full md:h-full md:scale-[3] md:-translate-x-11 relative z-0 flex items-center justify-end max-md:bg-[#F3F3F3] max-md:p-3"
           >
             <img
               data-aos="fade-up"
@@ -509,7 +484,7 @@
             </p>
           </div>
           <div
-            class="md:aspect-square md:w-auto w-full md:h-full md:scale-[3] md:-translate-x-11 relative z-0 flex items-center justify-end max-md:bg-[#F3F3F3] max-md:p-3 max-md:rounded-md"
+            class="md:aspect-square md:w-auto w-full md:h-full md:scale-[3] md:-translate-x-11 relative z-0 flex items-center justify-end max-md:bg-[#F3F3F3] max-md:p-3"
           >
             <img
               data-aos="fade-up"
@@ -522,6 +497,29 @@
             class="absolute w-[200vw] group-hover:opacity-100 pointer-events-none opacity-0 duration-500 -top-[1px] ease-in-out h-[calc(100%+1px)] bg-primary -z-10 left-1/2 -translate-x-1/2 max-md:hidden"
           ></span>
         </li>
+        <a
+          data-aos="fade-up"
+          data-aos-delay="0"
+          href=""
+          class="normalBtn md:mt-8 mt-4 hoverWhite"
+          >View Products Section
+
+          <span>
+            <svg
+              width="18"
+              height="15"
+              viewBox="0 0 18 15"
+              fill="none"
+              color="#EF5025"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
+                fill="currentcolor"
+              />
+            </svg>
+          </span>
+        </a>
       </menu>
     </section>
     <section class="bg-[#F3F3F3] w-full overflow-hidden">
@@ -566,218 +564,55 @@
           class="overflow-visible glass-products-slider md:mt-16 mt-6"
         >
           <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black"
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white overflow-hidden p-4"
           >
             <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+              class="w-full h-auto aspect-[9/11] overflow-hidden relative z-0 shrink-0"
             >
               <img
                 src="./common/assets/images/products/glass/Interior product.webp"
                 alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+                class="w-full h-[calc(100%)] absolute left-0 top-0 object-cover"
               />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Interior product
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                interior glass products are widely adopted for design
-                generations
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
             </div>
           </swiper-slide>
           <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white overflow-hidden p-4"
           >
             <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+              class="w-full h-auto aspect-[9/11] overflow-hidden relative z-0 shrink-0"
             >
               <img
-                src="./common/assets/images/products/glass/Display units.webp"
+                src="./common/assets/images/products/glass/Interior product.webp"
                 alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+                class="w-full h-[calc(100%)] absolute left-0 top-0 object-cover"
               />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Display units
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                Display units products are widely adopted for showcase products
-                and add products
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
             </div>
           </swiper-slide>
           <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white overflow-hidden p-4"
           >
             <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+              class="w-full h-auto aspect-[9/11] overflow-hidden relative z-0 shrink-0"
             >
               <img
-                src="./common/assets/images/products/glass/Shower cubicles.webp"
+                src="./common/assets/images/products/glass/Interior product.webp"
                 alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+                class="w-full h-[calc(100%)] absolute left-0 top-0 object-cover"
               />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Shower cubicles
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                used in bathroom to separate the shower from toilet
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
             </div>
           </swiper-slide>
           <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
+            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white overflow-hidden p-4"
           >
             <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
+              class="w-full h-auto aspect-[9/11] overflow-hidden relative z-0 shrink-0"
             >
               <img
-                src="./common/assets/images/products/glass/Mirrors.webp"
+                src="./common/assets/images/products/glass/Interior product.webp"
                 alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
+                class="w-full h-[calc(100%)] absolute left-0 top-0 object-cover"
               />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Mirrors
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                a polished or smooth surface (as of glass) that forms images by
-                reflection
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
-            </div>
-          </swiper-slide>
-          <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
-          >
-            <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
-            >
-              <img
-                src="./common/assets/images/products/glass/Glass balustrade.webp"
-                alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
-              />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Glass balustrade
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                frameless glass panels that are used to create a barrier and
-                offer safety
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
-            </div>
-          </swiper-slide>
-          <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
-          >
-            <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
-            >
-              <img
-                src="./common/assets/images/products/glass/Glass furniture.webp"
-                alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
-              />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Glass furniture
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                a contemporary design trend that's making waves in the world of
-                interior decor
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
-            </div>
-          </swiper-slide>
-          <swiper-slide
-            class="shadow-md flex flex-col w-[min(100%,260px)] bg-white rounded-lg group overflow-hidden p-4 duration-500 hover:bg-black h-auto"
-          >
-            <div
-              class="w-full h-auto aspect-video overflow-hidden rounded-md relative z-0 shrink-0"
-            >
-              <img
-                src="./common/assets/images/products/glass/Glass kiosk.webp"
-                alt=""
-                class="w-full h-[calc(100%+8px)] absolute left-0 -top-2 translate-y-2 group-hover:translate-y-0 duration-500 object-cover scale-110"
-              />
-            </div>
-            <div class="flex flex-col px-2 mt-4 h-full">
-              <h4
-                class="text-xl font-medium text-black duration-500 group-hover:text-white"
-              >
-                Glass kiosk
-              </h4>
-              <p
-                class="text-sm text-black duration-500 group-hover:text-white mt-1 mb-2"
-              >
-                used in high-traffic areas for marketing purposes
-              </p>
-              <a
-                href=""
-                class="mt-auto font-bold md:text-base text-sm text-primary group-hover:underline"
-                >View more</a
-              >
             </div>
           </swiper-slide>
         </swiper-container>
@@ -839,7 +674,7 @@
           <div
             data-aos="fade-up"
             data-aos-delay="0"
-            class="flex items-center w-full justify-center rounded-lg relative z-0 overflow-hidden min-h-[300px]"
+            class="flex items-center w-full justify-center relative z-0 overflow-hidden min-h-[300px]"
           >
             <img
               src="./common/assets/images/home/About HAS.webp"
@@ -878,7 +713,7 @@
           <li
             data-aos="fade-up"
             data-aos-delay="0"
-            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 overflow-hidden md:p-10 p-4"
           >
             <img
               src="./common/assets/icons/industry quality/In-House Production.svg"
@@ -895,7 +730,7 @@
           <li
             data-aos="fade-up"
             data-aos-delay="50"
-            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 overflow-hidden md:p-10 p-4"
           >
             <img
               src="./common/assets/icons/industry quality/Bespoke Solutions.svg"
@@ -910,7 +745,7 @@
           <li
             data-aos="fade-up"
             data-aos-delay="100"
-            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 overflow-hidden md:p-10 p-4"
           >
             <img
               src="./common/assets/icons/industry quality/Sustainability.svg"
@@ -925,7 +760,7 @@
           <li
             data-aos="fade-up"
             data-aos-delay="150"
-            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 rounded-xl overflow-hidden md:p-10 p-4"
+            class="flex items-start justify-center gap-6 bg-white shadow-lg shadow-gray-400 overflow-hidden md:p-10 p-4"
           >
             <img
               src="./common/assets/icons/industry quality/High Quality.svg"
@@ -1006,7 +841,7 @@
             <menu
               data-aos="fade-up"
               data-aos-delay="0"
-              class="w-full md:text-xl text-lg font-bold flex flex-col md:gap-10 gap-3"
+              class="w-full md:text-xl text-lg font-bold flex flex-col md:gap-14 gap-3"
             >
               <li
                 data-item-id="1"
@@ -1036,29 +871,6 @@
                 ></span>
               </li>
             </menu>
-            <a
-              data-aos="fade-up"
-              data-aos-delay="0"
-              href=""
-              class="normalBtn mt-8 hoverWhite shrink-0"
-              >View more details
-
-              <span>
-                <svg
-                  width="18"
-                  height="15"
-                  viewBox="0 0 18 15"
-                  fill="none"
-                  color="#EF5025"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.9176 8.20711C17.3082 7.81658 17.3082 7.18342 16.9176 6.79289L10.5537 0.428932C10.1631 0.0384079 9.52998 0.0384079 9.13946 0.428932C8.74893 0.819456 8.74893 1.45262 9.13946 1.84315L14.7963 7.5L9.13946 13.1569C8.74893 13.5474 8.74893 14.1805 9.13946 14.5711C9.52998 14.9616 10.1631 14.9616 10.5537 14.5711L16.9176 8.20711ZM0 8.5H16.2105V6.5H0V8.5Z"
-                    fill="currentcolor"
-                  />
-                </svg>
-              </span>
-            </a>
           </div>
           <div
             data-aos="fade-up"
@@ -1114,7 +926,7 @@
             class="overflow-visible Speak-of-Excellence md:mt-16 group cursor-pointer"
           >
             <swiper-slide
-              class="flex flex-col w-[min(100%,360px)] bg-white rounded-3xl group overflow-hidden md:p-6 p-4 duration-500 border border-black h-auto cursor-pointer"
+              class="flex flex-col w-[min(100%,360px)] bg-white group overflow-hidden md:p-6 p-4 duration-500 border border-black h-auto cursor-pointer"
             >
               <div class="flex items-center justify-start gap-4">
                 <img
@@ -1162,7 +974,7 @@
               </div>
             </swiper-slide>
             <swiper-slide
-              class="shadow-md flex flex-col w-[min(100%,360px)] bg-white rounded-3xl group overflow-hidden p-6 duration-500 border border-black h-auto"
+              class="shadow-md flex flex-col w-[min(100%,360px)] bg-white group overflow-hidden p-6 duration-500 border border-black h-auto"
             >
               <div class="flex items-center justify-start gap-4">
                 <img
@@ -1211,7 +1023,7 @@
               </div>
             </swiper-slide>
             <swiper-slide
-              class="shadow-md flex flex-col w-[min(100%,360px)] bg-white rounded-3xl group overflow-hidden p-6 duration-500 border border-black h-auto"
+              class="shadow-md flex flex-col w-[min(100%,360px)] bg-white group overflow-hidden p-6 duration-500 border border-black h-auto"
             >
               <div class="flex items-center justify-start gap-4">
                 <img
@@ -1272,6 +1084,70 @@
           data-aos-delay="0"
           class="md:text-5xl text-3xl font-primary shrink-0 flex items-center justify-center gap-3 relative group"
         >
+          Our Video
+          <img
+            src="./common/assets/icons/arrow .svg"
+            alt=""
+            class="rounded-full h-4 translate-y-1 -rotate-45 group-hover:translate-y-2.5 duration-300 invert"
+          />
+          <span
+            class="absolute left-0 w-full h-[1px] bottom-0 bg-transparent group-hover:bg-white duration-500"
+          ></span>
+        </h2>
+        <div
+          class="grid lg:grid-cols-[1.2fr_.8fr] gap-20 w-full h-full relative"
+        >
+          <div
+            class="flex flex-col items-start bg-white group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
+          >
+            <a
+              target="_blank"
+              href="https://www.youtube.com/embed/OLJvER63YYg"
+              class="flex items-center justify-center w-full h-full relative z-0 overflow-hidden aspect-video"
+            >
+              <img
+                src="https://img.youtube.com/vi/2cE0LNaVJgI/maxresdefault.jpg"
+                alt=""
+                class="size-full absolute object-cover inset-0"
+              />
+
+              <img
+                src="./common/assets/icons/playbtn.svg"
+                alt=""
+                class="absolute z-20 w-14 h-14 bg-white/20 backdrop-blur-sm aspect-square p-4"
+              />
+            </a>
+          </div>
+
+          <div class="grid gap-6 h-full text-white">
+            <div class="flex flex-col gap-10">
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="0"
+                class="md:text-5xl text-3xl font-primary max-w-[20ch]"
+              >
+                Manufacturing dealing , Distributing Quality
+              </h2>
+              <p data-aos="fade-up" data-aos-delay="50" class="text-base">
+                e, and going through the cites of the word in classical
+                literature, discovered the undoubtable source. Lorem Ipsum comes
+                from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et of
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black text-white w-full overflow-hidden">
+      <div
+        class="wrapper main_padding_y flex items-start flex-col md:gap-10 gap-4"
+      >
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="md:text-5xl text-3xl font-primary shrink-0 flex items-center justify-center gap-3 relative group"
+        >
           Our Blog
           <img
             src="./common/assets/icons/arrow .svg"
@@ -1296,10 +1172,10 @@
             class="blogSwiperLeftContainer w-full text-black md:aspect-[10/7] relative overflow-hidden"
           >
             <swiper-slide
-              class="shadow-md flex flex-col items-start bg-white rounded-3xl group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
+              class="shadow-md flex flex-col items-start bg-white group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
             >
               <div
-                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+                class="flex items-center justify-center w-full h-full relative z-0 overflow-hidden max-md:aspect-video"
               >
                 <img
                   src="./common/assets/images/blogs/HAS new head quarter.webp"
@@ -1324,10 +1200,10 @@
             </swiper-slide>
 
             <swiper-slide
-              class="shadow-md flex flex-col items-start bg-white rounded-3xl group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
+              class="shadow-md flex flex-col items-start bg-white group overflow-hidden md:p-6 p-4 duration-500 border border-black md:gap-6"
             >
               <div
-                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+                class="flex items-center justify-center w-full h-full relative z-0 overflow-hidden max-md:aspect-video"
               >
                 <img
                   src="./common/assets/images/blogs/HAS new head quarter.webp"
@@ -1364,10 +1240,10 @@
             <div
               data-aos="fade-up"
               data-aos-delay="0"
-              class="shadow-md flex flex-col items-start w-full bg-white rounded-3xl group overflow-hidden p-4 duration-500 border border-black h-full md:gap-2"
+              class="shadow-md flex flex-col items-start w-full bg-white group overflow-hidden p-4 duration-500 border border-black h-full md:gap-2"
             >
               <div
-                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+                class="flex items-center justify-center w-full h-full relative z-0 overflow-hidden max-md:aspect-video"
               >
                 <img
                   src="./common/assets/images/blogs/HAS new head quarter 2.webp"
@@ -1393,10 +1269,10 @@
             <div
               data-aos="fade-up"
               data-aos-delay="50"
-              class="shadow-md flex flex-col items-start w-full bg-white rounded-3xl group overflow-hidden p-4 duration-500 border border-black h-full md:gap-2"
+              class="shadow-md flex flex-col items-start w-full bg-white group overflow-hidden p-4 duration-500 border border-black h-full md:gap-2"
             >
               <div
-                class="flex items-center justify-center w-full h-full relative z-0 rounded-lg overflow-hidden max-md:aspect-video"
+                class="flex items-center justify-center w-full h-full relative z-0 overflow-hidden max-md:aspect-video"
               >
                 <img
                   src="./common/assets/images/blogs/HAS new head quarter 2.webp"

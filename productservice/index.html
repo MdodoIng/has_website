@@ -37,12 +37,11 @@
       <div
         style="
           background: rgba(64, 64, 64, 0.16);
-          box-shadow:
-            1px 8px 7px 1px rgb(0 0 0 / 53%),
+          box-shadow: 1px 8px 7px 1px rgb(0 0 0 / 53%),
             inset 0px 0.4px 0px 0px rgb(229 227 227 / 53%);
           backdrop-filter: blur(19.8593px);
         "
-        class="wrapper flex items-center justify-between lg:py-5 py-3 ld:px-10 px-6 relative z-0 text-white rounded-2xl"
+        class="wrapper flex items-center justify-between lg:py-5 py-3 ld:px-10 px-6 relative z-0 text-white"
       >
         <a href="../index.html">
           <img
@@ -79,51 +78,61 @@
             class="font-bold text-base flex items-center justify-end gap-8 max-lg:hidden"
           >
             <li>
-              <a class="hover:text-primary duration-500 menuUnderLine">Home</a>
-            </li>
-            <li class="flex items-center justify-center gap-2 relative group">
-              <div class="duration-500 group-hover:text-primary">Company</div>
-              <svg
-                class="h-2 w-auto text-white group-hover:text-primary duration-500 group-hover:rotate-180"
-                viewBox="0 0 16 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.125 6.625L13.875 0.875L15.625 2.625L8.125 10.125L0.625 2.625L2.375 0.875L8.125 6.625Z"
-                  fill="currentcolor"
-                />
-              </svg>
-              <span class="absolute h-14 top-0 left-0 w-full"> </span>
-
-              <menu
-                style="
-                  background: rgba(64, 64, 64, 0.582);
-                  box-shadow: 0px 4.53926px 4.53926px rgba(0, 0, 0, 0.25);
-                  backdrop-filter: blur(19.8593px);
-                "
-                class="absolute top-10 px-6 py-4 flex flex-col text-center gap-2 rounded-lg opacity-0 duration-500 translate-y-full pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
-              >
-                <a class="hover:text-primary duration-500 cursor-pointer"
-                  >About Us</a
-                >
-                <a class="hover:text-primary duration-500 cursor-pointer"
-                  >Sustainablity</a
-                >
-                <a class="hover:text-primary duration-500 cursor-pointer"
-                  >CSR</a
-                >
-              </menu>
+              <a href="../index.html" class="hover:text-primary duration-500 ">Home</a>
             </li>
             <li>
-              <a class="hover:text-primary duration-500">Product & Service</a>
+              <a
+                href="../about_us/index.html"
+                class="hover:text-primary duration-500"
+                >About Us</a
+              >
+            </li>
+            <!-- <li class="flex items-center justify-center gap-2 relative group">
+            <div class="duration-500 group-hover:text-primary">Company</div>
+            <svg
+              class="h-2 w-auto text-white group-hover:text-primary duration-500 group-hover:rotate-180"
+              viewBox="0 0 16 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.125 6.625L13.875 0.875L15.625 2.625L8.125 10.125L0.625 2.625L2.375 0.875L8.125 6.625Z"
+                fill="currentcolor"
+              />
+            </svg>
+            <span class="absolute h-14 top-0 left-0 w-full"> </span>
+
+            <menu
+              style="
+                background: rgba(64, 64, 64, 0.582);
+                box-shadow: 0px 4.53926px 4.53926px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(19.8593px);
+              "
+              class="absolute top-10 px-6 py-4 flex flex-col text-center gap-2 opacity-0 duration-500 translate-y-full pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
+            >
+              <a class="hover:text-primary duration-500 cursor-pointer"
+                >About Us</a
+              >
+              <a class="hover:text-primary duration-500 cursor-pointer"
+                >Sustainablity</a
+              >
+              <a class="hover:text-primary duration-500 cursor-pointer"
+                >CSR</a
+              >
+            </menu>
+          </li> -->
+            <li>
+              <a
+                href="../productservice/index.html"
+                class="hover:text-primary duration-500 menuUnderLine"
+                >Product & Service</a
+              >
             </li>
             <li>
               <a class="hover:text-primary duration-500">Blog</a>
             </li>
             <li>
-              <a
-                class="px-6 py-2 h-full rounded-md bg-primary text-sm duration-500"
+              <a href="../contact_us/index.html" class="px-6 py-2 h-full bg-primary text-sm duration-500"
                 >Contact Now</a
               >
             </li>
@@ -164,50 +173,57 @@
               />
             </svg>
             <menu
-              class="flex flex-col top-14 -right-6 bg-[#F3F3F3] text-black absolute px-10 py-6 rounded-md gap-2 font-medium items-start text-start group-hover:translate-y-0 translate-y-full pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 duration-300"
+              class="flex flex-col top-14 -right-6 bg-[#F3F3F3] text-black absolute px-10 py-6 gap-2 font-medium items-start text-start group-hover:translate-y-0 translate-y-full pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 duration-300"
             >
               <li>
-                <a class="hover:text-primary duration-500 menuUnderLine"
+                <a class="hover:text-primary duration-500 "
                   >Home</a
                 >
               </li>
-              <li
-                class="flex items-start justify-center gap-2 flex-col relative group/sub"
+              <!-- <li
+              class="flex items-start justify-center gap-2 flex-col relative group/sub"
+            >
+              <div
+                class="duration-500 group-hover/sub:text-primary inline-flex items-center gap-2"
               >
-                <div
-                  class="duration-500 group-hover/sub:text-primary inline-flex items-center gap-2"
-                >
-                  Company
+                Company
 
-                  <svg
-                    class="h-2 w-auto text-black group-hover/sub:text-primary duration-500 group-hover/sub:rotate-180"
-                    viewBox="0 0 16 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.125 6.625L13.875 0.875L15.625 2.625L8.125 10.125L0.625 2.625L2.375 0.875L8.125 6.625Z"
-                      fill="currentcolor"
-                    />
-                  </svg>
-                </div>
-
-                <menu
-                  class="group-hover/sub:max-h-96 max-h-0 overflow-hidden pl-4 duration-700 flex flex-col items-start gap-2"
+                <svg
+                  class="h-2 w-auto text-black group-hover/sub:text-primary duration-500 group-hover/sub:rotate-180"
+                  viewBox="0 0 16 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <a class="hover:text-primary duration-500 cursor-pointer"
-                    >About Us</a
-                  >
-                  <a class="hover:text-primary duration-500 cursor-pointer"
-                    >Sustainablity</a
-                  >
-                  <a class="hover:text-primary duration-500 cursor-pointer"
-                    >CSR</a
-                  >
-                </menu>
+                  <path
+                    d="M8.125 6.625L13.875 0.875L15.625 2.625L8.125 10.125L0.625 2.625L2.375 0.875L8.125 6.625Z"
+                    fill="currentcolor"
+                  />
+                </svg>
+              </div>
+
+              <menu
+                class="group-hover/sub:max-h-96 max-h-0 overflow-hidden pl-4 duration-700 flex flex-col items-start gap-2"
+              >
+                <a class="hover:text-primary duration-500 cursor-pointer"
+                  >About Us</a
+                >
+                <a class="hover:text-primary duration-500 cursor-pointer"
+                  >Sustainablity</a
+                >
+                <a class="hover:text-primary duration-500 cursor-pointer"
+                  >CSR</a
+                >
+              </menu>
+            </li> -->
+              <li>
+                <a
+                  href="../about_us/index.html"
+                  class="hover:text-primary duration-500"
+                  >About Us</a
+                >
               </li>
               <li>
-                <a class="hover:text-primary duration-500">Product & Service</a>
+                <a class="hover:text-primary duration-500 menuUnderLine">Product & Service</a>
               </li>
               <li>
                 <a class="hover:text-primary duration-500">Blog</a>
@@ -219,7 +235,7 @@
           </button>
         </div>
         <span
-          class="bg-white/[.03] absolute top-0 left-0 h-1/2 w-full -z-10 rounded-2xl max-lg:hidden"
+          class="bg-white/[.03] absolute top-0 left-0 h-1/2 w-full -z-10 max-lg:hidden"
         ></span>
       </div>
     </header>
@@ -259,7 +275,7 @@
             <img
               src="../common/assets/images/people/workman-with-his-arms-crossed-white-background 3.webp"
               alt=""
-              class="h-full w-max bg-primary object-contain rounded-lg overflow-hidden"
+              class="h-full w-max bg-primary object-contain overflow-hidden"
             />
 
             <menu class="flex flex-col gap-3">
@@ -309,7 +325,7 @@
         </h2>
         <menu class="md:mt-16 mt-6 grid sm:gap-10 gap-6">
           <li
-            class="grid sm:grid-cols-2 sm:gap-10 gap-4 w-full bg-white rounded-lg h-max overflow-hidden md:p-6 p-4"
+            class="grid sm:grid-cols-2 sm:gap-10 gap-4 w-full bg-white h-max overflow-hidden md:p-6 p-4"
           >
             <div
               data-aos="fade-up"
@@ -367,7 +383,7 @@
             </div>
           </li>
           <li
-            class="grid sm:grid-cols-2 sm:gap-10 gap-4 w-full bg-white rounded-lg h-max overflow-hidden md:p-6 p-4"
+            class="grid sm:grid-cols-2 sm:gap-10 gap-4 w-full bg-white h-max overflow-hidden md:p-6 p-4"
           >
             <div
               data-aos="fade-up"
@@ -425,7 +441,7 @@
             </div>
           </li>
           <li
-            class="grid sm:grid-cols-2 sm:gap-10 gap-4 w-full bg-white rounded-lg h-max overflow-hidden md:p-6 p-4"
+            class="grid sm:grid-cols-2 sm:gap-10 gap-4 w-full bg-white h-max overflow-hidden md:p-6 p-4"
           >
             <div
               data-aos="fade-up"
@@ -616,11 +632,11 @@
                   #000000 100%
                 );
               "
-              class="absolute h-[calc(100%-80px)] w-full -z-10 rounded-2xl bottom-0"
+              class="absolute h-[calc(100%-80px)] w-full -z-10 bottom-0"
             ></span>
             <span
               style="background: var(--color-primary)"
-              class="absolute h-[calc(100%-80px)] w-full -z-10 rounded-2xl bottom-0 group-hover:opacity-100 opacity-0 duration-500"
+              class="absolute h-[calc(100%-80px)] w-full -z-10 bottom-0 group-hover:opacity-100 opacity-0 duration-500"
             ></span>
 
             <img

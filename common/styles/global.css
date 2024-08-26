@@ -1,11 +1,13 @@
 @import url(./padding.css);
 @import url(./tailwind.min.css);
+@import url(../assets/font/black-mango/stylesheet.css);
+@import url(../assets/font/google-sans/stylesheet.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-  --font-primary: "Italiana", sans-serif;
-  --font-secondary: "Krub", sans-serif;
+  --font-primary: "Black Mango";
+  --font-secondary: "Google Sans";
   --font-tertiary: "Roboto", sans-serif;
   --color-primary: #ef5025;
 }
@@ -34,7 +36,6 @@
   border: 1px solid var(--color-primary);
   width: max-content;
   max-width: 100%;
-  border-radius: 14px;
   gap: 10px;
   font-weight: 800;
   font-size: 16px;
