@@ -47,12 +47,12 @@
           <img
             src="../common/assets/images/logo white.png"
             alt=""
-            class="lg:h-16 h-12 w-auto object-contain"
+            class="lg:h-20 h-12 w-auto object-contain"
           />
         </a>
         <div class="flex flex-col justify-between gap-6">
           <div
-            class="flex items-center justify-end gap-3 text-white font-light max-lg:hidden"
+            class="flex items-center justify-end gap-4 text-white font-light max-lg:hidden"
           >
             <a
               ><img
@@ -75,10 +75,12 @@
             <a> Has@inquiry.com</a>
           </div>
           <menu
-            class="font-bold text-base flex items-center justify-end gap-8 max-lg:hidden"
+            class="font-bold text-[1.1rem] tracking-[-0.3] flex items-center justify-end gap-8 max-lg:hidden"
           >
             <li>
-              <a href="../index.html" class="hover:text-primary duration-500"
+              <a
+                href="../index.html"
+                class="hover:text-primary duration-500 menuUnderLine"
                 >Home</a
               >
             </li>
@@ -103,7 +105,7 @@
               />
             </svg>
             <span class="absolute h-14 top-0 left-0 w-full"> </span>
-
+    
             <menu
               style="
                 background: rgba(64, 64, 64, 0.582);
@@ -135,8 +137,8 @@
             </li>
             <li>
               <a
-                href="./index.html"
-                class="px-6 py-2 h-full bg-primary text-sm duration-500"
+                href="../contact_us/index.html"
+                class="px-6 py-3 h-full bg-primary text-[1.1rem] tracking-[-0.3] duration-500"
                 >Contact Now</a
               >
             </li>
@@ -177,7 +179,7 @@
               />
             </svg>
             <menu
-              class="flex flex-col top-14 -right-6 bg-[#F3F3F3] text-black absolute px-10 py-6 gap-2 font-medium items-start text-start group-hover:translate-y-0 translate-y-full pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 duration-300"
+              class="flex flex-col top-14 -right-6 bg-[#F3F3F3] text-black absolute px-10 py-6 gap-2 font-medium items-start text-start group-hover:translate-y-0 translate-y-full pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 duration-300 w-max"
             >
               <li>
                 <a class="hover:text-primary duration-500 menuUnderLine"
@@ -191,7 +193,7 @@
                 class="duration-500 group-hover/sub:text-primary inline-flex items-center gap-2"
               >
                 Company
-
+    
                 <svg
                   class="h-2 w-auto text-black group-hover/sub:text-primary duration-500 group-hover/sub:rotate-180"
                   viewBox="0 0 16 11"
@@ -204,7 +206,7 @@
                   />
                 </svg>
               </div>
-
+    
               <menu
                 class="group-hover/sub:max-h-96 max-h-0 overflow-hidden pl-4 duration-700 flex flex-col items-start gap-2"
               >
@@ -227,13 +229,21 @@
                 >
               </li>
               <li>
-                <a class="hover:text-primary duration-500">Product & Service</a>
+                <a
+                  href="../productservice/index.html"
+                  class="hover:text-primary duration-500"
+                  >Product & Service</a
+                >
               </li>
               <li>
-                <a class="hover:text-primary duration-500">Blog</a>
+                <a href="" class="hover:text-primary duration-500">Blog</a>
               </li>
               <li>
-                <a class="hover:text-primary duration-500">Contact Now</a>
+                <a
+                  href="../contact_us/index.html"
+                  class="hover:text-primary duration-500"
+                  >Contact Now</a
+                >
               </li>
             </menu>
           </button>
@@ -249,7 +259,7 @@
         <h1
           data-aos="fade-up"
           data-aos-delay="0"
-          class="md:text-6xl text-4xl font-primary max-w-[20ch]"
+          class="md:text-6xl font-semibold !leading-[1.2] text-4xl font-primary max-w-[20ch]"
         >
           Ready to Elevate Your Next Project?
         </h1>
@@ -264,9 +274,23 @@
             </h2>
             <div class="flex items-center justify-between gap-20 mt-9">
               <p>7 Torrens St, London EC1V 1NQ, United Kingdom</p>
-              <div>
-                <a href="">Info@has.com</a>
-                <a href="">+91 9876543210</a>
+              <div class="flex flex-col shrink-0 gap-2">
+                <a href="" class="flex items-center justify-start gap-2">
+                  <img
+                    src="../common/assets/icons/mail-01-stroke-rounded.svg"
+                    alt=""
+                    class="object-contain w-4 h-4"
+                  />
+                  Info@has.com</a
+                >
+                <a href="" class="flex items-center justify-start gap-2">
+                  <img
+                    src="../common/assets/icons/call-02-stroke-rounded.svg"
+                    alt=""
+                    class="object-contain w-4 h-4"
+                  />
+                  +91 9876543210</a
+                >
               </div>
             </div>
             <img
@@ -274,7 +298,7 @@
               data-aos-delay="0"
               src="../common/assets/images/contact_us/map.png"
               alt=""
-              class="h-full w-full object-cover overflow-hidden mt-6"
+              class="h-full w-full object-cover overflow-hidden mt-10"
             />
           </div>
           <form
@@ -331,7 +355,7 @@
             <h2
               data-aos="fade-up"
               data-aos-delay="0"
-              class="md:text-5xl text-3xl font-primary max-w-[14ch]"
+              class="md:text-5xl font-semibold !leading-[1.3] text-3xl font-primary max-w-[14ch]"
             >
               Ready to Elevate Your Next Project?
             </h2>
@@ -361,7 +385,7 @@
           </div>
 
           <menu
-            class="flex items-start md:justify-end justify-start gap-10 max-sm:flex-wrap"
+            class="flex items-start md:justify-end justify-start gap-16 max-sm:flex-wrap"
           >
             <li
               data-aos="fade-up"
@@ -369,7 +393,7 @@
               class="flex flex-col gap-6"
             >
               <h4 class="font-semibold text-lg">Quick links</h4>
-              <menu class="flex flex-col gap-3 font-medium text-sm">
+              <menu class="flex flex-col gap-4 font-medium text-base">
                 <a>About Us</a>
                 <a>Why chose us</a>
                 <a>Contact us</a>
@@ -381,7 +405,7 @@
               class="flex flex-col gap-6"
             >
               <h4 class="font-semibold text-lg">Contact us</h4>
-              <menu class="flex flex-col gap-3 font-medium text-sm">
+              <menu class="flex flex-col gap-4 font-medium text-base">
                 <a>Info@has.com</a>
                 <a>+91 9876543210</a>
                 <a>+91 9098765432</a>
@@ -393,7 +417,7 @@
               class="flex flex-col gap-6"
             >
               <h4 class="font-semibold text-lg">Social media</h4>
-              <menu class="flex flex-col gap-3 font-medium text-sm">
+              <menu class="flex gap-4 font-medium text-sm">
                 <a
                   ><img
                     src="../common/assets/icons/instagram.webp"
@@ -445,10 +469,5 @@
     type="module"
     crossorigin="anonymous"
     src="../common/js/main.js"
-  ></script>
-  <script
-    type="module"
-    crossorigin="anonymous"
-    src="../common/js/aboutUs/index.js"
   ></script>
 </html>

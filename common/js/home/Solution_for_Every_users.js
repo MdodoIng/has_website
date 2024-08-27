@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let count = 0;
+  let count;
   const container = document.querySelector("#Solution_for_Every_users");
   const menuList = container.querySelectorAll("[data-item-id]");
   const images = container.querySelectorAll("[data-img-id]");
+
+  const texts = Array.from(container.querySelector("#texts").children);
 
   gsap.registerPlugin();
 
@@ -19,8 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = Number(element.getAttribute("data-item-id"));
     element.addEventListener("click", () => {
       if (activeElement) {
-        activeElement.classList.remove("[&_span]:!bg-primary", "!text-primary");
         activeElement.classList.add("[&_span]:!bg-black", "!text-black");
+        activeElement.classList.remove("[&_span]:!bg-primary", "!text-primary");
+        hideText(count);
       }
 
       if (count !== id) {
@@ -29,13 +32,25 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.remove("[&_span]:!bg-black");
         activeElement = element;
       } else {
-        element.classList.remove("[&_span]:!bg-primary", "!text-primary");
         element.classList.add("[&_span]:!bg-black", "!text-black");
+        element.classList.remove("[&_span]:!bg-primary", "!text-primary");
         activeElement = null;
       }
       imageHide();
     });
   });
+
+  function hideText(id) {
+    texts.forEach((element) => {
+      if (Number(element.dataset.itemId) === id) {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    });
+  }
+
+  hideText(1);
 
   function imageHide() {
     images.forEach((img) => {

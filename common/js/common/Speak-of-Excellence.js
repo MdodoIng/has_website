@@ -3,6 +3,7 @@ const params = {
     delay: 5000,
   },
   slidesPerView: 1,
+  centeredSlides: true,
   breakpoints: {
     640: {
       slidesPerView: "auto",
