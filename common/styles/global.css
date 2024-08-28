@@ -31,16 +31,17 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 16px 20px;
+  padding: 14px 20px;
   background: var(--color-primary);
   border: 1px solid var(--color-primary);
   width: max-content;
   max-width: 100%;
   gap: 10px;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 19px;
   transition: all 0.3s ease;
   color: white;
+  letter-spacing: -.8px;
 
   span {
     padding: 4px;
