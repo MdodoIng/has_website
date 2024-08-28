@@ -8,9 +8,9 @@ const buttons = [glassBtn, aluminiumBtn];
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    buttons.forEach((b) => b.classList.remove("menuUnderLine"));
+    buttons.forEach((b) => b.classList.remove("bg-primary", "text-white"));
 
-    btn.classList.add("menuUnderLine");
+    btn.classList.add("bg-primary", "text-white");
 
     if (btn === glassBtn) {
       filterProduct("glass");
@@ -22,11 +22,11 @@ buttons.forEach((btn) => {
 
 glassBtn.addEventListener("click", () => {
   filterProduct("glass");
-  glassBtn.classList.add("menuUnderLine");
+  glassBtn.classList.add("bg-primary", "text-white");
 });
 aluminiumBtn.addEventListener("click", () => {
   filterProduct("aluminium");
-  aluminiumBtn.classList.add("menuUnderLine");
+  aluminiumBtn.classList.add("bg-primary", "text-white");
 });
 
 function filterProduct(dataset) {
