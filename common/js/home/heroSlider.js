@@ -4,7 +4,7 @@ const container = document.querySelector("#leadingHeroSection");
 const textTargets = container.querySelectorAll(".heading");
 const pTargets = container.querySelectorAll(".text");
 const headingHight = container.querySelector(".headingHight");
-const  textHight = container.querySelector(".textHight");
+const textHight = container.querySelector(".textHight");
 const images = container.querySelectorAll("[data-sliderImage]");
 const sliderPagination = container.querySelector("[data-slider-pagination]");
 const dummi = container.querySelector("p");
@@ -62,7 +62,7 @@ function animateBox() {
           }, 2600);
       },
       immediateRender: true,
-    }
+    },
   );
 }
 
@@ -86,7 +86,7 @@ function setHightOfPagination() {
         height: "100%",
         duration: "2",
         ease: "leaner",
-      }
+      },
     );
     if (idx < count) {
       gsap.to(element, {

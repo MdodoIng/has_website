@@ -12,10 +12,10 @@ buttons.forEach((btn) => {
       (b) => (
         b.classList.remove(
           "product_filterBtn_active",
-          "product_filterBtn_deActive"
+          "product_filterBtn_deActive",
         ),
         b.classList.add("product_filterBtn_deActive")
-      )
+      ),
     );
 
     btn.classList.toggle("product_filterBtn_active");
