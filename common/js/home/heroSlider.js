@@ -2,7 +2,9 @@ let count = 0;
 
 const container = document.querySelector("#leadingHeroSection");
 const textTargets = container.querySelectorAll(".heading");
+const pTargets = container.querySelectorAll(".text");
 const headingHight = container.querySelector(".headingHight");
+const  textHight = container.querySelector(".textHight");
 const images = container.querySelectorAll("[data-sliderImage]");
 const sliderPagination = container.querySelector("[data-slider-pagination]");
 const dummi = container.querySelector("p");
@@ -21,7 +23,7 @@ function createPagination() {
 
 createPagination();
 
-gsap.set(textTargets, {
+gsap.set([textTargets, pTargets], {
   y: (i) => i * 100 + "%",
 });
 
@@ -39,7 +41,7 @@ function animateBox() {
   setHeight();
   changeBg();
   gsap.fromTo(
-    textTargets[count],
+    [textTargets[count], pTargets[count]],
     { y: "200%" }, // From
     {
       y: "0%", // To
@@ -47,7 +49,7 @@ function animateBox() {
       opacity: 1,
       ease: "power2.inOut",
       onComplete: () => {
-        gsap.to(textTargets[count], {
+        gsap.to([textTargets[count], pTargets[count]], {
           y: "-200%",
           duration: 1.2,
           delay: 2,
@@ -60,12 +62,13 @@ function animateBox() {
           }, 2600);
       },
       immediateRender: true,
-    },
+    }
   );
 }
 
 function setHeight() {
   headingHight.style.height = `${textTargets[count].clientHeight}px`;
+  textHight.style.height = `${pTargets[count].clientHeight}px`;
 }
 
 function setHightOfPagination() {
@@ -83,7 +86,7 @@ function setHightOfPagination() {
         height: "100%",
         duration: "2",
         ease: "leaner",
-      },
+      }
     );
     if (idx < count) {
       gsap.to(element, {

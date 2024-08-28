@@ -23,19 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
       if (activeElement) {
         activeElement.classList.add("[&_span]:!bg-black", "!text-black");
         activeElement.classList.remove("[&_span]:!bg-primary", "!text-primary");
-        hideText(count);
       }
 
       if (count !== id) {
         count = id;
+        element.classList.remove("[&_span]:!bg-black", "!text-black");
         element.classList.add("[&_span]:!bg-primary", "!text-primary");
-        element.classList.remove("[&_span]:!bg-black");
         activeElement = element;
       } else {
-        element.classList.add("[&_span]:!bg-black", "!text-black");
         element.classList.remove("[&_span]:!bg-primary", "!text-primary");
+        element.classList.add("[&_span]:!bg-black", "!text-black");
         activeElement = null;
       }
+      hideText(count);
       imageHide();
     });
   });

@@ -8,9 +8,18 @@ const buttons = [glassBtn, aluminiumBtn];
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    buttons.forEach((b) => b.classList.remove("bg-primary", "text-white"));
+    buttons.forEach(
+      (b) => (
+        b.classList.remove(
+          "product_filterBtn_active",
+          "product_filterBtn_deActive"
+        ),
+        b.classList.add("product_filterBtn_deActive")
+      )
+    );
 
-    btn.classList.add("bg-primary", "text-white");
+    btn.classList.toggle("product_filterBtn_active");
+    btn.classList.toggle("product_filterBtn_deActive");
 
     if (btn === glassBtn) {
       filterProduct("glass");
@@ -18,15 +27,6 @@ buttons.forEach((btn) => {
       filterProduct("aluminium");
     }
   });
-});
-
-glassBtn.addEventListener("click", () => {
-  filterProduct("glass");
-  glassBtn.classList.add("bg-primary", "text-white");
-});
-aluminiumBtn.addEventListener("click", () => {
-  filterProduct("aluminium");
-  aluminiumBtn.classList.add("bg-primary", "text-white");
 });
 
 function filterProduct(dataset) {

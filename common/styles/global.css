@@ -117,3 +117,12 @@
     border-radius: 100px;
   }
 }
+
+.product_filterBtn_active {
+  background-color: #ef5025;
+  color: white;
+}
+.product_filterBtn_deActive {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
