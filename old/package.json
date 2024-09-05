@@ -1,0 +1,24 @@
+{
+  "name": "axis_capital_website",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "serve": "concurrently \"postcss --ignore node_modules common/styles/tailwind.main.css -o common/styles/tailwind.min.css --watch\"  \"live-server ./\"",
+    "development": "postcss --ignore node_modules common/styles/tailwind.main.css -o common/styles/tailwind.min.css",
+    "production": "bunx tailwindcss -i common/styles/tailwind.main.css -o common/styles/tailwind.min.css",
+    "start": "npm run serve",
+    "cssWatch": "bunx tailwindcss -i common/styles/tailwind.main.css -o common/styles/tailwind.min.css --watch --debounce 0",
+    "formate": "npx prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.0",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.10"
+  }
+}

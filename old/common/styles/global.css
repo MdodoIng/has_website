@@ -1,0 +1,120 @@
+@import url(./padding.css);
+@import url(./tailwind.min.css);
+@import url(../assets/font/black-mango/stylesheet.css);
+@import url(../assets/font/google-sans/stylesheet.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-primary: "Black Mango";
+  --font-secondary: "Google Sans";
+  --font-tertiary: "Roboto", sans-serif;
+  --color-primary: #ef5025;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-secondary);
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: min(84%, 1540px);
+}
+
+.normalBtn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 14px 20px;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  width: max-content;
+  max-width: 100%;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 19px;
+  transition: all 0.3s ease;
+  color: white;
+  letter-spacing: -.8px;
+
+  span {
+    padding: 4px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &:hover {
+    background: black;
+    color: white;
+    border-color: black;
+
+    span {
+      rotate: -25deg;
+      scale: 1.1;
+
+      svg {
+        color: black;
+      }
+    }
+  }
+  &.hoverWhite {
+    &:hover {
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-color: black;
+
+      span {
+        border: 1px solid black;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 16px 16px;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 16px;
+
+    span {
+      padding: 2px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.menuUnderLine {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--color-primary);
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+  }
+}
